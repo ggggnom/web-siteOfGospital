@@ -1,0 +1,1803 @@
+@import "reset.css";
+@import "fonts.css";
+
+html {
+   font-size: 4px;
+   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #FFF0DC;
+  font-family: 'Dulya', 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  overflow-y: hidden;
+}
+
+@media (max-width: 1920px) {
+  .grid {
+    display: grid;
+    grid-gap: 30px 60px;
+    margin:16px 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .block {
+    color: gray;
+    height: 200px;
+    grid-column: 1/2;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/13;
+  }
+
+  header img {
+    width: 190px;
+  }
+
+  .menu--section {
+    display: flex;
+  }
+
+  .menu--section p {
+    font-size: 4.5rem;
+    font-family: 'Montserrat';
+    margin-left: 40px;
+  }
+
+  .invented {
+    color: #004CA1;
+  }
+
+  .menu--section p:hover {
+    color: #7E7E7E;
+    text-decoration: underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h5 {
+   font-family: 'Dulya';
+   font-weight: normal;
+   text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 30rem;
+    line-height: 30rem;
+  }
+
+
+  h2 {
+    font-size: 24rem;
+    line-height: 26rem;
+  }
+
+  .intro {
+    grid-column: 1/7;
+    margin-top: 100px;
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-size: 6rem;
+    line-height: 9rem;
+  }
+
+  .intro p {
+    font-size: 8rem;
+    margin-top: 1.5em;
+    line-height: 10.5rem;
+  }
+
+  .intro a {
+    margin-top: 11rem;
+  }
+
+  .button {
+    background-color: none;
+    font-size: 6rem;
+    border: 1px solid #000000;
+    display: inline-block;
+    padding: 6rem 14rem;
+    font-family: 'Montserrat';
+    border-radius: 14rem;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    color: #004CA1;
+    border: 1px solid #004CA1;
+  }
+
+  .arms {
+    width: 180vw;
+    position: absolute;
+    left: -35vw;
+    top: -19vw;
+    z-index: -1;
+  }
+
+  .menu--section--menu  {
+    display: none;
+  }
+
+  .menu--moblile {
+    display: none;
+  }
+
+  .central {
+    grid-column: 3/11;
+  }
+
+  .central h2 {
+    text-align: center;
+    font-size: 24rem;
+    line-height: 26rem;
+    margin-top: -280px;
+  }
+
+  .central p {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .central img {
+    margin-top: 250px;
+  }
+
+  .before--after {
+    grid-column: 1/13;
+    margin-top: 11vw;
+  }
+
+  .before--after--img {
+    grid-column: 3/11;
+  }
+
+  .before--after--img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .before--after h1 {
+    margin-top: -100vw;
+  }
+
+  .orange {
+    margin-top: 20vw;
+    z-index: -1;
+    margin-left: -5vw;
+    width: 105vw;
+  }
+
+  h3 {
+    font-size: 18rem;
+    line-height: 21rem;
+  }
+
+  .before--after--story {
+    grid-column: 9/13;
+    margin-top: 13vw;
+
+  }
+
+  .before--after--story p {
+    margin-top: 1em;
+  }
+
+  a {
+    font-size: 6rem;
+    line-height: 9rem;
+    font-family: 'Montserrat';
+    padding-bottom: 1rem;
+    border-bottom: 1px #000000 solid;
+    text-decoration: none;
+  }
+
+  .before--after--story p {
+    margin-bottom: 6rem;
+  }
+
+  .before--after--story a {
+    display: inline-block;
+  }
+
+  .before--after--story div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ambulance {
+    grid-column: 1/6;
+    margin-top: 464px;
+  }
+
+  .ambulance p {
+    margin-top: 1.5em;
+  }
+
+  .ambulance a {
+    margin-top: 1.5em;
+  }
+
+  .ambulance h2 {
+    margin-top: -39vw;
+  }
+
+  .car {
+    grid-column: 8/13;
+    width: 42vw;
+    margin-top: 600px;
+  }
+
+  .yellow--backgroud {
+    z-index: -1;
+    margin-top: -20vw;
+    width: 110vw;
+    margin-left: -6vw;
+  }
+
+  .master-class-info {
+    grid-column: 1/6;
+  }
+
+  .master-class-info h2 {
+    margin-top: -33vw;
+  }
+
+  .master-class-about {
+    grid-column: 8/13;
+    margin-top: 40vw;
+  }
+
+  .add--text {
+    font-size: 4.5rem;
+    line-height: 6rem;
+    margin-top: 1.5em;
+  }
+
+  .master-class-about a {
+    margin-top: 6rem;
+  }
+
+  .link {
+    color: black;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .master-class-about div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .leaf {
+    z-index: -1;
+    margin-top: 20vw;
+    width: 45vw;
+    margin-left: -4vw;
+  }
+
+  .about--exibition {
+    grid-column: 1/7;
+    margin-top: 400px;
+  }
+
+  h4 {
+    font-family: "Montserrat";
+    font-size: 16rem;
+    line-height: 19.5rem;
+    font-weight: lighter;
+  }
+
+  .about--exibition h4 {
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+  }
+
+  .about--exibition a {
+    margin-top: 1.5em;
+  }
+
+  .rocks {
+    width: 110vw;
+    margin-top: -6vw;
+    margin-left: -4vw;
+}
+
+ .about--exibition h2 {
+   margin-top: -51vw;
+ }
+
+ .stars {
+   width: 20vw;
+   margin-left: 55vw;
+ }
+
+ .benefit {
+   grid-column: 1/13;
+   display: flex;
+   flex-direction: column;
+   margin-top: 500px;
+   margin-bottom: 450px;
+  }
+
+  .benefit p {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .benefit h2 {
+    text-align: center;
+    margin-top: -160px;
+  }
+
+  .call {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18rem;
+  }
+
+  .call a:first-child {
+    margin-right: 50px;
+  }
+
+  .hearts {
+    width: 290px;
+    margin-left: 350px;
+  }
+
+  footer {
+    color: white;
+    grid-column: 1/13;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/13;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .header h5 {
+    font-size: 17rem;
+    line-height: 19rem;
+    color: white;
+  }
+
+  .header-menu a {
+    margin-left: 30px;
+  }
+
+  h6 {
+    font-size: 7.5rem;
+    line-height: 9rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 26px;
+  }
+
+
+   .treatment a,
+   .adress p,
+   .header-menu a,
+   .timetable p,
+   .answers-to-any-questions p,
+   .add-info-info p {
+    color: white;
+    border-bottom: 0px;
+    font-size: 4.5rem;
+    line-height: 7rem;
+  }
+
+  .treatment a:hover,
+  .header-menu a:hover {
+    text-decoration: underline;
+    color: #CDCDCD;
+  }
+
+  .adress,
+  .treatment,
+  .timetable,
+  .answers-to-any-questions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .treatment {
+     grid-column: 1/4;
+  }
+
+  .adress {
+     grid-column: 4/7;
+  }
+
+  .timetable {
+    grid-column: 7/10;
+  }
+
+  .answers-to-any-questions {
+    grid-column: 10/13;
+    margin-top:
+  }
+
+  .add-info {
+    grid-column: 1/13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .add-info-icon img {
+    margin-right: 40px;
+  }
+
+  .add-info-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-info-info p {
+    margin-left: 80px;
+  }
+
+  .timetable-header {
+    text-transform: uppercase;
+  }
+
+  .h {
+    margin-bottom: 15px;
+  }
+
+  .timetable-gospital {
+    margin-bottom: 30px;
+  }
+
+  .time {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-backgroud {
+    background-color: #FA5A58;
+    width: 2050px;
+    height: 950px;
+    position: relative;
+    z-index: -1;
+    grid-column: 1/13;
+    margin-left: -8vw;
+    margin-top: -930px;
+  }
+
+  .menuOnMobile {
+    display: none;
+  }
+
+  .about--exibition--main {
+    margin-top: 35px;
+    margin-bottom: 500px;
+  }
+
+  .rocks--main {
+    margin-top: -9vw;
+  }
+
+  .about--exibition--main--header {
+    margin-top: -979px;
+  }
+
+  .children {
+    grid-column: 1/7;
+    width: 46vw;
+    margin-top: -74px;
+  }
+
+  .about--master--class {
+    grid-column: 7/12;
+  }
+
+  .about--master--class p {
+    margin-top: 2.5em;
+  }
+
+  .about--master--class--add-text--two {
+    display: none;
+  }
+
+  .data {
+   grid-column: 1/13;
+  }
+
+  .time {
+    grid-column: 1/3;
+  }
+
+  .age {
+    display: none;
+  }
+
+  .age--name--of--master--class {
+    grid-column: 3/9;
+    text-transform: uppercase;
+  }
+
+  .place--sign {
+    grid-column: 10/13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plus {
+    display: none;
+  }
+
+  .bottom--line {
+    grid-column: 1/13;
+    border-top: 1px #000000 solid;
+  }
+
+  .first--line--age {
+    display: none;
+  }
+
+  .first--line--place {
+    display: none;
+  }
+
+  .timetable--of--master--class {
+    grid-column: 1/13;
+  }
+
+  .timetable--of--master--class--first{
+    grid-column: 1/13;
+    border-bottom: 1px #000000 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #second {
+    display: none;
+  }
+}
+
+@media (max-width: 1760px) {
+  .ambulance h2 {
+    margin-top: -42vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -54vw;
+  }
+
+  .ambulance {
+    grid-column: 1/7;
+    margin-top: 464px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -1060px;
+  }
+
+  .about--exibition--main {
+    margin-top: 16px;
+ }
+
+ .rocks--main {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .before--after--story {
+    margin-top: 6vw;
+  }
+
+  .about--exibition {
+    margin-top: 29vw;
+ }
+
+ .about--exibition h2 {
+    margin-top: -63vw;
+ }
+
+ .about--exibition--main {
+   grid-column: 1/8;
+   margin-top: 40px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -985px;
+  }
+}
+
+@media (max-width: 1545px) {
+  .yellow--backgroud {
+    width: 128vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -63vw;
+ }
+
+ .about--exibition {
+    margin-top: 32vw;
+    grid-column: 1/8;
+ }
+
+ .about--exibition h2 {
+    margin-top: -69vw;
+ }
+
+ .benefit {
+    margin-top: 41vw;
+ }
+
+ .about--exibition--main {
+   margin-top: 120px;
+  }
+
+  .children {
+    grid-column: 1/8;
+    width: 53vw;
+    margin-top: -44px;
+  }
+
+  .about--master--class {
+    grid-column: 8/13;
+  }
+}
+
+@media (max-width: 1470px) {
+  .grid {
+    display: grid;
+    grid-gap: 30px 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .menu--section p {
+    font-size: 3.5rem;
+  }
+
+  header {
+    grid-column: 1/9;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 20rem;
+    line-height: 20.5rem;
+  }
+
+  .intro {
+    grid-column: 1/5;
+    margin-top: 150px;
+  }
+
+  .intro p {
+    font-size: 6rem;
+    margin-top: 1em;
+    line-height: 8.5rem;
+  }
+
+  .button {
+    font-size: 4.5rem;
+    padding: 5rem 12rem;
+    border-radius: 14rem;
+  }
+
+  h2 {
+    font-size: 16rem;
+    line-height: 18rem;
+  }
+
+  p {
+    font-size: 4.5rem;
+    line-height: 7rem;
+  }
+
+  a {
+    font-size: 4.5rem;
+    line-height: 7rem;
+  }
+
+  .central {
+    grid-column: 2/8;
+    margin-top: -8vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -24vw;
+    width: 114vw;
+}
+
+  .central h2 {
+    font-size: 16rem;
+    line-height: 18rem;
+  }
+
+  .before--after {
+    grid-column: 1/9;
+    margin-top: 1vw;
+  }
+
+  .orange {
+    width: 111vw;
+    left: -5vw;
+    top: 121vw;
+
+  }
+
+  .before--after--img img {
+    width: 400px;
+  }
+
+  .before--after--img img:last-child {
+    width: 800px;
+  }
+
+  .before--after--story {
+    grid-column: 6/9;
+    margin-top: 9vw;
+  }
+
+  h3 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+
+  .ambulance {
+    grid-column: 1/5;
+  }
+
+  .ambulance h2 {
+    margin-top: -39vw;
+  }
+
+  .master-class-info {
+    grid-column: 1/4;
+    margin-top: 33vw;
+  }
+
+  .master-class-about {
+    grid-column: 5/9;
+    margin-top: 34vw;
+  }
+
+  .leaf {
+    margin-top: -19vw;
+  }
+
+  .benefit {
+    grid-column: 2/8;
+    margin-top: 28vw;
+    margin-bottom: 400px;
+  }
+
+  .before--after--img {
+    grid-column: 2/8;
+  }
+
+  .car {
+    grid-column: 6/9;
+    margin-top: 35vw;
+  }
+
+  .add--text {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  h4 {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
+  .about--exibition {
+    grid-column: 1/5;
+    margin-top: 3vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -49vw;
+  }
+
+  .rocks {
+    width: 108vw;
+    margin-top: -7vw;
+  }
+
+  .stars {
+    margin-top: 20vw;
+  }
+
+  .hearts {
+    margin-left: 10vw;
+  }
+
+  .header {
+    grid-column: 1/9;
+  }
+
+  .treatment {
+    grid-column: 1/5;
+  }
+
+  .adress {
+    grid-column: 5/9;
+  }
+
+  .timetable {
+    grid-column: 1/5;
+  }
+
+  .answers-to-any-questions {
+    grid-column: 5/9;
+  }
+
+  .add-info {
+    grid-column: 1/9;
+  }
+
+  .footer-backgroud {
+    width: 2050px;
+    height: 1300px;
+    grid-column: 1/9;
+    margin-left: -8vw;
+    margin-top: -1250px;
+  }
+
+  .header h5 {
+    font-size: 12rem;
+    line-height: 14.5rem;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -700px;
+  }
+
+  .about--exibition--main {
+    grid-column: 1/5;
+    margin-top: -300px;
+    margin-bottom: 400px;
+  }
+
+  .stars--main {
+    margin-top: 280px;
+  }
+
+  .rocks--main {
+    margin-left: -5vw;
+  }
+
+  .children {
+    grid-column: 1/6;
+    margin-top: -71px;
+  }
+
+  .about--master--class {
+    grid-column: 6/9;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .intro {
+    margin-top: 50px;
+  }
+
+  .orange {
+    margin-top: 21vw;
+  }
+
+  .before--after h1 {
+    margin-top: -105vw;
+  }
+
+  .before--after--story {
+    margin-top: 0vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -28vw;
+    width: 134vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -48vw;
+ }
+
+  .car {
+      margin-top: 41vw;
+   }
+
+   .master-class-info {
+    grid-column: 1/4;
+    margin-top: 47vw;
+  }
+
+  .master-class-about {
+    margin-top: 48vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -53vw;
+  }
+
+  h6 {
+    font-size: 6rem;
+    line-height: 8.5rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 26px;
+  }
+
+
+   .treatment a,
+   .adress p,
+   .header-menu a,
+   .timetable p,
+   .answers-to-any-questions p,
+   .add-info-info p {
+    color: white;
+    border-bottom: 0px;
+    font-size: 3.5rem;
+    line-height: 6rem;
+  }
+
+  .add-info-icon img {
+    width: 36px;
+  }
+
+  .footer-backgroud {
+      height: 1200px;
+      margin-top: -1150px;
+   }
+
+   .about--exibition--main {
+    grid-column: 1/5;
+    margin-top: -250px;
+    margin-bottom: 300px;
+  }
+
+  .children {
+    margin-top: -55px;
+  }
+
+}
+
+@media (max-width: 1180px) {
+  .about--exibition {
+    margin-top: 13vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -64vw;
+  }
+
+  .before--after--img img:last-child {
+    width: 668px;
+    height: 569px
+  }
+
+  .before--after--img img {
+    width: 373px;
+ }
+
+ .stars--main {
+    margin-top: -24px;
+ }
+
+ #about--exibition--main--header {
+    margin-top: -752px;
+ }
+
+ .children {
+   margin-top: -22px;
+   grid-column: 1/5;
+   width: 49vw;
+ }
+
+ .about--master--class {
+    grid-column: 5/9;
+ }
+}
+
+@media (max-width: 1070px) {
+  .central {
+    margin-top: -18vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -37vw;
+    width: 146vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -53vw;
+  }
+
+  .about--exibition {
+    grid-column: 1/6;
+    margin-top: 10vw;
+  }
+
+  .stars {
+    margin-left: 62vw;
+  }
+
+  .benefit {
+    margin-top: 36vw;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -670px;
+  }
+
+  .rocks--main {
+    margin-left: -8vw;
+    margin-top: 15px;
+  }
+
+  .about--exibition--main {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intro {
+    grid-column: 1/7;
+  }
+
+  .arms {
+    top: -15vw;
+  }
+
+  .central img {
+    width: 350px;
+  }
+
+  .before--after {
+    margin-top: 4vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -72vw;
+  }
+
+  .ambulance {
+    grid-column: 1/6;
+  }
+
+  .before--after--story {
+    grid-column: 5/9;
+    margin-top: -1vw;
+  }
+
+  .before--after--img {
+    margin-left: 90px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -753px;
+  }
+
+  .rocks--main {
+    margin-left: -8vw;
+    margin-top: 130px;
+  }
+
+  .children {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 924px) {
+  .grid {
+    display: grid;
+    grid-gap: 30px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  header {
+    grid-column: 1/7;
+  }
+
+  .intro {
+    margin-top: 100px;
+  }
+
+  .intro p {
+    margin-top: 1.5em;
+  }
+
+  .central {
+    grid-column: 1/7;
+  }
+
+  .benefit {
+    grid-column: 1/7;
+  }
+
+  .before--after--story {
+    grid-column: 4/7;
+    margin-top: -1vw;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -668px;
+  }
+
+  .children {
+    margin-top: 28px;
+    grid-column: 2/6;
+    width: 66vw;
+  }
+
+  .about--master--class {
+    grid-column: 1/4;
+  }
+
+  .about--master--class--add-text {
+    display: none;
+  }
+
+  .about--master--class--add-text--two {
+    display: block;
+    grid-column: 4/7;
+    margin-top: 200px;
+  }
+
+}
+
+@media (max-width: 840px) {
+  .about--master--class {
+    grid-column: 1/5;
+  }
+
+  .about--master--class--add-text--two {
+    display: block;
+    grid-column: 5/7;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-gap: 60px 40px;
+    margin: 16px 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  .intro {
+    margin-top: 300px;
+    grid-column: 1/6;
+  }
+
+  .arms {
+    transform: rotate(30deg);
+    margin-top: 35vw;
+    width: 187vw;
+    top: -17vw;
+    left: -42vw;
+  }
+
+  .before--after {
+    grid-column: 1/7;
+    margin-top: 1vw;
+  }
+
+  .master-class-about {
+    grid-column: 4/7;
+    margin-top: 34vw;
+  }
+
+  .before--after--story {
+    grid-column: 1/7;
+    margin-top: 11vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -37vw;
+    width: 250vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -87vw;
+  }
+
+  .car {
+    margin-top: -18vw;
+    grid-column: 5/7;
+  }
+
+  .before--after--img img:last-child {
+    width: 70vw;
+    height: 59vw;
+  }
+
+  .before--after--img img {
+    width: 38vw;
+  }
+
+  .before--after h1 {
+    margin-top: -114vw;
+  }
+
+  .before--after {
+    grid-column: 1/7;
+    margin-top: 29vw;
+  }
+
+  .ambulance {
+    grid-column: 1/7;
+    margin-top: 46vw;
+  }
+
+  .master-class-info {
+    grid-column: 3/7;
+    margin-top: 47vw;
+  }
+
+  .master-class-about {
+    grid-column: 3/7;
+    margin-top: 34vw;
+    margin-top: -2vw;
+  }
+
+  .leaf {
+    margin-top: -13vw;
+    width: 100vw;
+    margin-left: -47vw;
+  }
+
+  .master-class-info h2 {
+    margin-top: -84vw;
+  }
+
+  .about--exibition {
+    grid-column: 1/6;
+    margin-top: 25vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -88vw;
+  }
+
+  .rocks {
+    margin-top: 17vw;
+  }
+
+  .call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call a:first-child {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .benefit {
+    margin-top: 45vw;
+  }
+
+  .header {
+    grid-column: 1/7;
+  }
+
+  .treatment {
+    grid-column: 1/4;
+  }
+
+  .adress {
+    grid-column: 4/7;
+  }
+
+  .timetable {
+    grid-column: 1/4;
+  }
+
+  .answers-to-any-questions {
+    grid-column: 4/7;
+  }
+
+  .add-info {
+    grid-column: 1/7;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .add-info-info p:first-child{
+    display: none;
+  }
+
+  .footer-backgroud {
+    width: 2050px;
+    height: 1200px;
+    grid-column: 1/7;
+    margin-left: -8vw;
+    margin-top: -1150px;
+  }
+
+  .about--exibition {
+    margin-top: 192px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -758px;
+  }
+
+  .rocks--main {
+    margin-top: 194px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .menu--section--menu {
+    display: block;
+    width: 40px;
+  }
+
+  .menu--section p {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about--master--class--add-text--two {
+    display: none;
+  }
+
+  .about--master--class {
+    grid-column: 1/7;
+  }
+
+  .about--exibition {
+    margin-top: 288px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -806px;
+  }
+}
+
+@media (max-width: 514px) {
+  #about--exibition--main--header {
+    margin-top: -930px;
+  }
+
+  .about--exibition {
+    margin-top: 460px;
+  }
+}
+
+@media (max-width: 475px) {
+  .grid {
+    margin: 20px;
+    display: grid;
+    grid-gap: 30px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  header {
+    grid-column: 1/3;
+  }
+
+  .intro {
+    grid-column: 1/3;
+    margin-top: 57vw;
+  }
+
+  p, a {
+    font-size: 3.5rem;
+    line-height: 7rem;
+  }
+
+
+  h1 {
+    font-size: 12rem;
+    line-height: 11.5rem;
+  }
+
+  .central h2 {
+    font-size: 10rem;
+    line-height: 13.5rem;
+    text-align: left;
+    margin-top: -300px;
+  }
+
+  h2 {
+    font-size: 10rem;
+    line-height: 13.5rem;
+  }
+
+  h3, h4 {
+    font-size: 7.5rem;
+    line-height: 8.5rem;
+  }
+
+  .central p {
+    text-align: left;
+  }
+
+  .central img {
+    width: 500px;
+    margin-left: -46vw;
+    margin-top: 29vw;
+  }
+
+  .intro p {
+    font-size: 4.5rem;
+    margin-top: 1.5em;
+    line-height: 7rem;
+  }
+
+  .arms {
+    width: 231vw;
+    transform: rotate(34deg);
+    left: -65vw;
+    top: -14vw;
+  }
+
+  .car {
+    margin-top: -18vw;
+    grid-column: 1/3;
+  }
+
+  .before--after {
+    grid-column: 1/3;
+    margin-top: 28vw;
+  }
+
+  .benefit {
+    grid-column: 1/3;
+  }
+
+  .ambulance {
+    grid-column: 1/3;
+    margin-top: 46vw;
+  }
+
+  .master-class-info {
+    grid-column: 1/3;
+    margin-top: 47vw;
+  }
+
+  .master-class-about {
+    grid-column: 1/3;
+    margin-top: 34vw;
+    margin-top: -2vw;
+  }
+
+  .master-class-about {
+    grid-column: 1/3;
+    margin-top: 34vw;
+  }
+
+  .central {
+    grid-column: 1/3;
+  }
+
+
+  .button {
+    font-size: 3.5rem;
+    border: 1px solid #000000;
+    padding: 1em 1.8em;
+    font-family: 'Montserrat';
+    border-radius: 2em;
+    text-decoration: none;
+  }
+
+  .before--after--story {
+    grid-column: 1/3;
+    margin-top: 11vw;
+  }
+
+  .about--exibition {
+  grid-column: 1/3;
+  margin-top: 25vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -37vw;
+    width: 358vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -135vw;
+  }
+
+  .car {
+    margin-top: -6vw;
+    width: 69vw;
+    margin-left: 32vw;
+  }
+
+  .leaf {
+    width: 133vw;
+    margin-left: -34vw;
+  }
+
+  .master-class-info h2 {
+    margin-top: -115vw;
+  }
+
+  .master-class-about {
+    margin-top: -1vw;
+  }
+
+  a {
+    padding-bottom: 0em;
+  }
+
+  .about--exibition h2 {
+    margin-top: -120vw;
+  }
+
+  .rocks {
+    margin-top: 40vw;
+  }
+
+  .stars {
+    width: 25vw;
+  }
+
+  .benefit {
+    margin-top: 58vw;
+    margin-bottom: 300px;
+  }
+
+  .hearts {
+    margin-left: 6vw;
+    width: 200px;
+  }
+
+  .benefit h2 {
+    margin-top: -129px;
+  }
+
+
+  .header {
+    grid-column: 1/3;
+    margin-bottom: 28px;
+  }
+
+  .treatment {
+    grid-column: 1/3;
+  }
+
+  .adress {
+    grid-column: 1/3;
+  }
+
+  .timetable {
+    grid-column: 1/3;
+  }
+
+  .answers-to-any-questions {
+    grid-column: 1/3;
+  }
+
+  .add-info {
+    grid-column: 1/3;
+    margin-top: 38px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .add-info-info {
+    display: none;
+  }
+
+  .footer-backgroud {
+    height: 1400px;
+    grid-column: 1/3;
+    margin-left: -8vw;
+    margin-top: -1350px;
+  }
+
+  .add-info-icon img {
+    width: 48px;
+    margin-right: 0px;
+  }
+
+  .add-info-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92vw;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -596px;
+  }
+
+  .rocks {
+    margin-top: 216px;
+  }
+
+  .about--exibition--main {
+    margin-top: 142px;
+    margin-bottom: 200px;
+  }
+
+  .children {
+    margin-top: 28px;
+    grid-column: 1/3;
+    width: 83vw;
+    margin-left: 10vw;
+  }
+
+  .about--master--class p {
+    margin-top: 1.5em;
+}
+
+  .about--master--class {
+    grid-column: 1/3;
+  }
+
+}
+
+@media (max-width: 432px) {
+  .about--exibition h2 {
+   margin-top: -140vw;
+  }
+
+  .about--exibition {
+    margin-top: 41vw;
+  }
+
+  .rocks {
+    margin-top: 55vw;
+  }
+
+  .benefit {
+    margin-top: 65vw;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -630px;
+  }
+}
+
+@media (max-width: 397px) {
+  .intro {
+   margin-top: 40vw;
+  }
+
+  .central img {
+    margin-left: -55vw;
+  }
+
+  .central h2 {
+    margin-top: -330px;
+  }
+
+  .car {
+    margin-top: -18vw;
+    width: 57vw;
+    margin-left: 40vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -162vw;
+  }
+
+  .stars {
+    width: 30vw;
+    margin-left: 59vw;
+  }
+
+  .rocks {
+    margin-top: 64vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro {
+    margin-top: 16vw;
+  }
+
+  .arms {
+    width: 231vw;
+    transform: rotate(34deg);
+    left: -65vw;
+    top: -28vw;
+  }
+
+  .before--after h1 {
+    margin-top: -121vw;
+  }
+
+  .yellow--backgroud {
+    margin-top: -32vw;
+    width: 399vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -154vw;
+  }
+
+  .car {
+    margin-top: -14vw;
+  }
+
+  .about--exibition h2 {
+    margin-top: -192vw;
+  }
+
+  .rocks {
+    margin-top: 88vw;
+  }
+
+  .header h5 {
+    font-size: 9rem;
+    line-height: 11rem;
+  }
+
+  .footer-backgroud {
+    height: 1300px;
+    margin-top: -1300px;
+  }
+
+  #about--exibition--main--header {
+    margin-top: -683px;
+}
+
+}
+
+@media (max-width: 333px) {
+  .central h2 {
+    margin-top: -394px;
+  }
+
+  .about--exibition h2 {
+    margin-top: -210vw;
+  }
+
+  .rocks {
+    margin-top: 104vw;
+  }
+
+  .yellow--backgroud {
+    width: 421vw;
+  }
+
+  .ambulance h2 {
+    margin-top: -169vw;
+  }
+}

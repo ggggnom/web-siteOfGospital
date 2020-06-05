@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Dulya.otf';
+  font-weight: normal;
+  src: url("../fonts/Dulya.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat.otf';
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+
+
+@font-face {
+  font-family: 'Montserrat.otf';
+  font-weight: lighter;
+  src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+}
