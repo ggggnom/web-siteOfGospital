@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Dulya';
   font-weight: normal;
-  src: url("../fonts/Dulya.otf") format("truetype");
+  src: url(../fonts/Dulya.otf) format(truetype);
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-weight: normal;
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url(../fonts/Montserrat-Regular.ttf) format(truetype);
 }
 
 
@@ -15,5 +15,5 @@
 @font-face {
   font-family: 'Montserrat';
   font-weight: lighter;
-  src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  src: url(../fonts/Montserrat-ExtraLight.ttf) format(ruetype);
 }
