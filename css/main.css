@@ -34,7 +34,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     grid-column: 1/13;
   }
 
@@ -46,18 +45,26 @@ body {
     display: flex;
   }
 
-  .menu--section p {
-    font-size: 4.5rem;
+  .menu--section a {
+    font-size: 3.5rem;
     font-family: 'Montserrat';
     margin-left: 40px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 0px solid #000;
   }
 
-  .invented {
+  #invented--section {
     color: #004CA1;
   }
 
-  .menu--section p:hover {
-    color: #7E7E7E;
+  #invented--section:hover {
+    color: #004CA1;
+    text-decoration: none;
+  }
+
+  .menu--section a:hover {
+    color: #77C697;
     text-decoration: underline;
   }
 
@@ -83,7 +90,7 @@ body {
 
   .intro {
     grid-column: 1/7;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   p {
@@ -96,10 +103,6 @@ body {
     font-size: 8rem;
     margin-top: 1.5em;
     line-height: 10.5rem;
-  }
-
-  .intro a {
-    margin-top: 11rem;
   }
 
   .button {
@@ -122,7 +125,7 @@ body {
     width: 180vw;
     position: absolute;
     left: -35vw;
-    top: -19vw;
+    top: -18vw;
     z-index: -1;
   }
 
@@ -199,7 +202,6 @@ body {
     font-size: 6rem;
     line-height: 9rem;
     font-family: 'Montserrat';
-    padding-bottom: 1rem;
     border-bottom: 1px #000000 solid;
     text-decoration: none;
   }
@@ -226,8 +228,8 @@ body {
     margin-top: 1.5em;
   }
 
-  .ambulance a {
-    margin-top: 1.5em;
+  a {
+    margin-top: 2em;
   }
 
   .ambulance h2 {
@@ -303,10 +305,6 @@ body {
   .about--exibition h4 {
     margin-top: 0.5em;
     margin-bottom: 1.2em;
-  }
-
-  .about--exibition a {
-    margin-top: 1.5em;
   }
 
   .rocks {
@@ -403,6 +401,11 @@ body {
     line-height: 7rem;
   }
 
+  .treatment a {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
   .treatment a:hover,
   .header-menu a:hover {
     text-decoration: underline;
@@ -483,11 +486,11 @@ body {
     z-index: -1;
     grid-column: 1/13;
     margin-left: -8vw;
-    margin-top: -930px;
+    margin-top: -890px;
   }
 
   .menuOnMobile {
-    display: none;
+    display:;
   }
 
   .about--exibition--main {
@@ -577,9 +580,523 @@ body {
   #second {
     display: none;
   }
+
+  .repairs--of--bear {
+    width: 20vw;
+    grid-column: 1/5;
+    margin-top: -500px;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 5/7;
+  }
+
+  .kinds--of--repairs div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .repairs--header {
+    grid-column: 5/10;
+    margin-bottom: 15px;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 7/11;
+  }
+
+  .cost {
+    grid-column: 8/11;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .repairs--text {
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+
+  .vector--bear {
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .repairs--of--helicopter {
+    width: 580px;
+  }
+
+  .repairs--header--left {
+    grid-column: 3/10;
+  }
+
+  .kinds--of--repairs--left {
+    grid-column: 3/5;
+  }
+
+  .kinds--of--repairs--left div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .description--repairs--of--bear--left {
+    grid-column: 5/9;
+  }
+
+  .left {
+    grid-column: 3/8;
+    margin-bottom: 15px;
+  }
+
+  .left--chage--top {
+    margin-top: 250px;
+  }
+
+  .left--kinds {
+    grid-column: 3/5;
+  }
+
+  .left--kinds div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .left--description {
+    grid-column: 5/9;
+  }
+
+  .left--cost {
+    grid-column: 6/9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 300px;
+  }
+
+  .helicopter {
+    grid-column: 9/13;
+    width: 30vw;
+    margin-bottom: -500px;
+    margin-top: 250px;
+  }
+
+  .care--header {
+    grid-column: 2/12;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .care--about {
+    grid-column: 3/11;
+    text-align: center;
+    margin-bottom: 500px;
+  }
+
+  .flower {
+    width: 800px;
+    margin-top: 100px;
+    margin-left:5;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .line {
+    width: 90vw;
+    position: absolute;
+    z-index: -1;
+    margin-top: -3vw;
+    margin-left: 8vw;
+  }
+
+  .sparkle {
+    position: absolute;
+    z-index: -1;
+    margin-left: 74vw;
+    width: 120px;
+    margin-top: 13vw;
+  }
+
+  .robot {
+    width: 23vw;
+    grid-column: 1/5;
+    margin-top: -500px;
+  }
+
+  .dog {
+    width: 24vw;
+    grid-column: 9/13;
+    margin-top: -377px;
+  }
+
+  .old--bear {
+    width: 20vw;
+    grid-column: 1/5;
+    margin-top: -520px;
+  }
+
+  .story--before--after {
+    grid-column: 3/11;
+    margin-top: 400px;
+    margin-bottom: 500px;
+  }
+
+  .arrow--one,
+  .arrow--two {
+    width: 34px;
+    margin-top: 723px;
+  }
+
+  .arrow--one {
+    grid-column: 2/3;
+  }
+
+  .arrow--two {
+    grid-column: 11/12;
+    transform: scale(-1, 1);
+  }
+
+  .story--before--after--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .photo--before--after {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .photo--before--after img:first-child {
+      width: 350px;
+  }
+
+  .photo--before--after img:last-child {
+      width: 690px;
+  }
+
+  .first--background,
+  .second--background,
+  .third--background {
+    position: absolute;
+    z-index: -1;
+    width: 110vw;
+    left: -30px;
+  }
+
+  .first--background {
+    top: 1050px;
+  }
+
+  .second--background {
+    top: 3200px;
+  }
+
+  .third--background {
+    top: 5100px;
+  }
+
+  .robot--second {
+    display: none;
+  }
+
+  .electro--two {
+    display: none;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .sign {
+    grid-column: 1/5;
+    margin-top: 180px;
+  }
+
+  .sign h3 {
+    margin-bottom: 60px;
+  }
+
+  .about--form,
+  .form--button {
+    grid-column: 5/9;
+  }
+
+  .form--button p {
+    width: 227px;
+  }
+
+  .form--button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-bottom: 300px;
+  }
+
+  .about--form {
+    margin-top: 310px;
+  }
+
+  .number {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+
+  input {
+    border: 1px solid #EDCA00;
+    font-size: 24px;
+    background-color: #EDCA00;
+    grid-column: 5/9;
+    height: 60px;
+    border-bottom: 2px solid #000;
+    margin-top: -5px;
+  }
+
+  .contact--background {
+    position: absolute;
+    z-index: -1;
+    width: 106vw;
+    margin-top: 20px;
+    margin-left: -60px;
+  }
+
+  .adress--info--adress {
+    grid-column: 1/5;
+  }
+
+  .adress--info--adress p:first-child {
+    margin-bottom: 15px;
+  }
+
+  .adress--info--adress {
+    margin-bottom: 100px;
+    margin-top: 80px;
+  }
+
+  .first--building {
+    grid-column: 1/4;
+  }
+
+  .second--building {
+    grid-column: 4/7;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+    grid-column: 7/13;
+    margin-top: -300px;
+    margin-bottom: 120px;
+  }
+
+  iframe {
+    width: 99%;
+  }
+
+  .first--building h6,
+  .second--building h6,
+  .call--doctor h6,
+  .excursion h6,
+  .collab h6,
+  .follow h6 {
+    color: #000;
+  }
+
+  .times {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 270px;
+  }
+
+  .adress--info--time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .call--doctor {
+    grid-column: 1/4;
+  }
+
+  .excursion {
+    grid-column: 4/7;
+  }
+
+  .collab {
+    grid-column: 7/10;
+  }
+
+  .follow {
+    grid-column: 10/13;
+    margin-bottom: 400px;
+  }
+
+  .follow div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .follow img {
+    width: 50px;
+  }
+
+  .menuOnMobile {
+    display: none;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/7;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+
+  .data p {
+    font-size: 32px;
+  }
+
+  #firstData,
+  #secondData,
+  #thirdData,
+  #fourthData {
+    font-family: "Dulya";
+    font-size: 96px;
+  }
+
+  #thirdData,
+  #fourthData {
+    font-family: "Dulya";
+    font-size: 96px;
+  }
+
+  #firstDataSmall,
+  #secondData,
+  #thirdData,
+  #fourthData {
+    display: none;
+  }
+
+  .schedule {
+    grid-column: 1/13;
+    margin-top: 100px;
+  }
+
+  .schedule--section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .schedule--part--one,
+  .schedule--part--two {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .schedule--time {
+    margin-right: 60px;
+  }
+
+  .schedule--age {
+    margin-right: 20px;
+  }
+
+  .schedule--part--two a {
+    margin-top: 0px;
+    color: black;
+    margin-left: 60px;
+  }
+
+  hr {
+    border-bottom: 1.5px solid #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .starlite {
+    position: relative;
+    z-index: -1;
+    grid-column: 1/13;
+    margin-top: -700px;
+    margin-bottom: 700px;
+  }
+
+  .starlite img {
+    display: block;
+  }
+
+  .starlite img:first-of-type {
+    width: 800px;
+    margin-left: -200px;
+  }
+
+  .starlite img:nth-last-child(2){
+    width: 400px;
+    transform: scale(-1, 1);
+    margin-left: 400px;
+    margin-top: -300px;
+  }
+
+  .starlite img:last-of-type{
+    width: 200px;
+    margin-left: 76vw;
+    margin-top: -650px;
+  }
+
+  #scheduleSecond,
+  #scheduleThird,
+  #wolf,
+  #scheduleFourth {
+    display: none;
+  }
+
+  #wolf {
+    position: relative;
+    z-index: -1;
+    width: 65vw;
+    margin-top: -600px;
+    grid-column: 1/13;
+    margin-left: -80px;
+    margin-bottom: 200px;
+  }
+
+  #cloud {
+    position: relative;
+    z-index: -1;
+    display: none;
+    grid-column: 1/13;
+    width: 82vw;
+    margin-left: 18vw;
+    margin-top: -405px;
+    margin-bottom: 250px;
+  }
+
+  .schedule--part--two img {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1760px) {
+
+  .intro {
+    margin-top: 100px;
+  }
+
   .ambulance h2 {
     margin-top: -42vw;
   }
@@ -604,6 +1121,18 @@ body {
  .rocks--main {
     margin-top: -30px;
   }
+
+  .line {
+    width: 87vw;
+    position: absolute;
+    z-index: -1;
+    margin-top: -1vw;
+    margin-left: 7vw;
+  }
+
+  .sparkle {
+    margin-top: 16vw;
+  }
 }
 
 @media (max-width: 1680px) {
@@ -627,15 +1156,54 @@ body {
   #about--exibition--main--header {
     margin-top: -985px;
   }
+
+  .line {
+    width: 95vw;
+    margin-top: -1vw;
+    margin-left: 3vw;
+  }
+
+  .flower {
+    margin-left: -5vw;
+  }
+
+  .care--header {
+    grid-column: 1/13;
+  }
+
+  .care--about {
+    grid-column: 2/12;
+  }
+
+  .sign {
+    grid-column: 1/6;
+  }
+
+  .about--form,
+  .form--button,
+  input {
+    grid-column: 6/11;
+  }
+
+  #wolf {
+    width: 1200px;
+    margin-top: -600px;
+    margin-bottom: 240px;
+  }
 }
 
 @media (max-width: 1545px) {
+
+  .intro {
+    grid-column: 1/8;
+  }
+
   .yellow--backgroud {
     width: 128vw;
   }
 
   .ambulance h2 {
-    margin-top: -63vw;
+    margin-top: -48vw;
  }
 
  .about--exibition {
@@ -663,6 +1231,57 @@ body {
 
   .about--master--class {
     grid-column: 8/13;
+  }
+
+  .care--header {
+    grid-column: 2/12;
+    margin-top: 150px;
+  }
+
+  .care--about {
+    grid-column: 4/10;
+  }
+
+  .sparkle {
+    margin-top: 15vw;
+    margin-left: 59vw;
+  }
+
+  .flower {
+    margin-left: 5vw;
+    margin-top: 150px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 5/8;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 8/12;
+  }
+
+  .cost {
+    grid-column: 9/12;
+  }
+
+  .left {
+    grid-column: 2/8;
+  }
+
+  .left--kinds {
+    grid-column: 2/5;
+  }
+
+  .data {
+    grid-column: 1/9;
+  }
+
+  #cloud {
+    margin-top: -367px;
   }
 }
 
@@ -900,6 +1519,245 @@ body {
     grid-column: 6/9;
   }
 
+  .treatment,
+  .adress,
+  .timetable {
+    margin-bottom:  30px;
+  }
+
+  .treatment a {
+    margin-top: 0px;
+  }
+
+  .care--header {
+    grid-column: 2/7;
+    font-size: 80px;
+    line-height: 106px;
+  }
+
+  .care--about {
+    grid-column: 2/7;
+  }
+
+  .sparkle {
+    margin-top: 15vw;
+    margin-left: 59vw;
+  }
+
+  .flower {
+    margin-left: 5vw;
+    margin-top: 150px;
+  }
+
+  .repairs--of--bear {
+    width: 20vw;
+    grid-column: 1/3;
+    margin-top: -410px;
+    margin-bottom: 150px;
+  }
+
+  .repairs--header {
+    grid-column: 3/7;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 3/5;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 5/9;
+  }
+
+  .cost {
+    grid-column: 6/9;
+  }
+
+  .left {
+    grid-column: 1/5;
+  }
+
+  .left--kinds {
+    grid-column: 1/3;
+  }
+
+  .left--description {
+    grid-column: 3/7;
+  }
+
+  .left--chage--top {
+    margin-top: 150px;
+  }
+
+  .left--cost {
+    grid-column: 4/7;
+    margin-bottom: 200px;
+  }
+
+  .helicopter {
+    grid-column: 7/9;
+    width: 21vw;
+    margin-bottom: -500px;
+    margin-top: 210px;
+  }
+
+  .robot {
+    width: 20vw;
+    grid-column: 1/3;
+    margin-top: -350px;
+  }
+
+  .dog {
+    width: 20vw;
+    grid-column: 7/9;
+    margin-top: -217px;
+  }
+
+  .old--bear {
+    width: 20vw;
+    grid-column: 1/3;
+    margin-top: -390px;
+  }
+
+  .story--before--after {
+    grid-column: 2/8;
+    margin-top: 350px;
+    margin-bottom: 500px;
+  }
+
+  .arrow--one {
+    grid-column: 1/2;
+    margin-top: 530px;
+    width: 26px;
+  }
+
+  .arrow--two {
+    width: 26px;
+    grid-column: 8/9;
+    margin-top: 530px;
+  }
+
+  .photo--before--after img:first-child {
+    width: 19vw;
+  }
+
+  .photo--before--after img:last-child {
+    width: 38vw;
+  }
+
+  .sparkle {
+    margin-top: 14vw;
+    margin-left: 47vw;
+  }
+
+  .flower {
+    margin-left: -2vw;
+    margin-top: 117px;
+  }
+
+  .second--background {
+    top: 2500px;
+  }
+
+  .footer-backgroud {
+    height: 1250px;
+    margin-top: -1150px;
+  }
+
+   .third--background {
+      top: 3880px;
+   }
+
+   .adress--info--adress {
+    margin-bottom: 50px;
+  }
+
+  .first--building h6,
+  .second--building h6,
+  .call--doctor h6,
+  .excursion h6,
+  .collab h6,
+  .follow h6 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .sign {
+    grid-column: 1/5;
+  }
+
+  .about--form,
+  .form--button,
+  input {
+    grid-column: 5/9;
+  }
+
+  .adress--info--adress {
+    grid-column: 1/5;
+  }
+
+  .first--building {
+    grid-column: 1/5;
+  }
+
+  .second--building {
+    grid-column: 1/5;
+  }
+
+  #map {
+    grid-column: 5/9;
+  }
+
+  .call--doctor,
+  .collab {
+    grid-column: 1/5;
+  }
+
+  .excursion,
+  .follow {
+    grid-column: 5/8;
+  }
+
+  .excursion {
+    margin-bottom: 30px;
+  }
+
+  .excursion div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .excursion div p:first-child{
+    margin-right: 30px;
+  }
+
+  .follow {
+    margin-bottom: 300px;
+  }
+
+  .form--button p {
+    width: 171px;
+  }
+
+  .contact--background {
+    width: 125vw;
+  }
+
+  .data {
+    grid-column: 1/7;
+  }
+
+  .schedule,
+  #cloud,
+  #wolf,
+  .starlite {
+    grid-column: 1/9;
+  }
+
+  #cloud {
+    margin-top: -320px;
+  }
+
 }
 
 @media (max-width: 1280px) {
@@ -916,7 +1774,7 @@ body {
   }
 
   .before--after--story {
-    margin-top: 0vw;
+    margin-top: 8vw;
   }
 
   .yellow--backgroud {
@@ -986,6 +1844,35 @@ body {
     margin-top: -55px;
   }
 
+  .repairs--text {
+    font-size: 3.5rem;
+    line-height: 6.5rem;
+  }
+
+  .kinds--of--repairs div {
+    margin-bottom: 5px;
+  }
+
+  .left--kinds div {
+    margin-bottom: 5px;
+  }
+
+  .contact--background {
+    width: 134vw;
+  }
+
+  .starlite img:last-of-type {
+    width: 150px;
+    margin-left: 70vw;
+    margin-top: -580px;
+  }
+
+  #wolf {
+    width: 900px;
+    margin-top: -500px;
+    margin-bottom: 280px;
+  }
+
 }
 
 @media (max-width: 1180px) {
@@ -998,12 +1885,13 @@ body {
   }
 
   .before--after--img img:last-child {
-    width: 668px;
-    height: 569px
+    width: 61vw;
+    height: 50vw;
   }
 
   .before--after--img img {
-    width: 373px;
+    width: 34vw;
+    justify-content: space-between;
  }
 
  .stars--main {
@@ -1023,9 +1911,47 @@ body {
  .about--master--class {
     grid-column: 5/9;
  }
+
+ .repairs--of--bear {
+    margin-top: -370px;
+  }
+
+  .story--before--after {
+    margin-top: 300px;
+  }
+
+  .third--background {
+    top: 4044px;
+  }
+
+  .left--cost {
+    margin-bottom: 150px;
+  }
+
+  .left--chage--top {
+    margin-top: 80px;
+  }
+
+  .repairs--of--bear {
+    margin-bottom: 130px;
+  }
+
+  .orange {
+    z-index: -1;
+    margin-left: -7vw;
+  }
+
+  .excursion div {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1070px) {
+
+  .intro {
+    grid-column: 1/7;
+  }
+
   .central {
     margin-top: -18vw;
   }
@@ -1064,6 +1990,44 @@ body {
   .about--exibition--main {
     margin-top: 40px;
   }
+
+  .third--background {
+    top: 4010px;
+  }
+
+  .care--about {
+    grid-column: 3/11;
+    text-align: center;
+    margin-bottom: 400px;
+  }
+
+  #firstData,
+  #secondData,
+  #thirdData,
+  #fourthData {
+    font-size: 64px;
+  }
+
+  #firstDataSmall,
+  #secondDataSmall,
+  #thirdDataSmall,
+  #fourthDataSmall {
+    font-size: 24px;
+  }
+
+  .data {
+    grid-column: 1/6;
+  }
+
+  .starlite img:nth-last-child(2) {
+    width: 300px;
+    margin-left: 400px;
+    margin-top: -210px;
+  }
+
+  #cloud {
+    margin-top: -280px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1093,7 +2057,7 @@ body {
 
   .before--after--story {
     grid-column: 5/9;
-    margin-top: -1vw;
+    margin-top: 7vw;
   }
 
   .before--after--img {
@@ -1112,6 +2076,49 @@ body {
   .children {
     margin-top: 28px;
   }
+
+  .story--before--after {
+    margin-top: 250px;
+  }
+
+  .follow img {
+    width: 40px;
+  }
+
+  .form--button {
+    margin-bottom: 200px;
+  }
+
+  .times {
+    width: 208px;
+  }
+
+  .contact--background {
+    width: 164vw;
+    margin-top: 46px;
+  }
+
+  .data {
+    grid-column: 1/7;
+  }
+
+  .starlite img:last-of-type {
+    display: none;
+  }
+
+  .starlite img:nth-last-child(2) {
+    margin-bottom: -480px;
+  }
+
+  #wolf {
+    width: 600px;
+    margin-top: -400px;
+    margin-bottom: 300px;
+  }
+
+  .schedule {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 924px) {
@@ -1121,7 +2128,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
 
-  header {
+  .header {
     grid-column: 1/7;
   }
 
@@ -1143,7 +2150,7 @@ body {
 
   .before--after--story {
     grid-column: 4/7;
-    margin-top: -1vw;
+    margin-top: 9vw;
   }
 
   #about--exibition--main--header {
@@ -1170,6 +2177,121 @@ body {
     margin-top: 200px;
   }
 
+  .leaf {
+    margin-left: -9vw;
+  }
+
+  .master-class-about {
+    grid-column: 4/7;
+  }
+
+  .adress,
+  .answers-to-any-questions {
+    grid-column: 4/7;
+  }
+
+  .add-info {
+    grid-column: 1/7;
+  }
+
+  .treatment,
+  .timetable {
+    grid-column: 1/4;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .sign,
+  .form--button,
+  .about--form,
+  input {
+    grid-column: 1/7;
+  }
+
+  .about--form {
+    margin-top: 50px;
+  }
+
+  input {
+    margin-top: 15px;
+  }
+
+  .adress--info--adress {
+    grid-column: 1/7;
+  }
+
+  .first--building {
+    grid-column: 1/4;
+  }
+
+  .second--building {
+    grid-column: 4/7;
+  }
+
+  #map {
+    grid-column: 1/7;
+    margin-top: 100px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+
+  .call--doctor,
+  .collab {
+    grid-column: 1/4;
+  }
+
+  .excursion,
+  .follow {
+    grid-column: 4/7;
+  }
+
+  .excursion div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    grid-column: 1/7;
+  }
+
+  .contact--background {
+    width: 192vw;
+    margin-left: -271px;
+  }
+
+  .schedule,
+  #cloud,
+  #wolf,
+  .starlite {
+    grid-column: 1/7;
+  }
+
+  .schedule--part--two img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .schedule--part--two a,
+  .schedule--part--two p {
+    display: none;
+  }
+
+  .starlite img:first-of-type {
+    width: 500px;
+    margin-left: -150px;
+    margin-top: 230px;
+  }
+
+  .starlite img:nth-last-child(2) {
+    width: 250px;
+    margin-left: 267px;
+  }
+
 }
 
 @media (max-width: 840px) {
@@ -1182,12 +2304,20 @@ body {
     grid-column: 5/7;
     margin-top: 200px;
   }
+
+  .ambulance h2 {
+    margin-top: -59vw;
+  }
+
+  .yellow--backgroud {
+    margin-left: -9vw;
+  }
 }
 
 @media (max-width: 768px) {
   .grid {
     display: grid;
-    grid-gap: 60px 40px;
+    grid-gap: 25px 40px;
     margin: 16px 35px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   }
@@ -1265,7 +2395,7 @@ body {
   .master-class-about {
     grid-column: 3/7;
     margin-top: 34vw;
-    margin-top: -2vw;
+    margin-top: 0vw;
   }
 
   .leaf {
@@ -1284,7 +2414,7 @@ body {
   }
 
   .about--exibition h2 {
-    margin-top: -88vw;
+    margin-top: -104vw;
   }
 
   .rocks {
@@ -1340,7 +2470,7 @@ body {
 
   .footer-backgroud {
     width: 2050px;
-    height: 1200px;
+    height: 1150px;
     grid-column: 1/7;
     margin-left: -8vw;
     margin-top: -1150px;
@@ -1358,16 +2488,349 @@ body {
     margin-top: 194px;
   }
 
+  .care--header {
+    grid-column: 1/7;
+    font-size: 80px;
+    line-height: 96px;
+    margin-top: 220px;
+  }
+
+  .care--about {
+    grid-column: 2/6;
+    margin-top: -25px;
+  }
+
+  .repairs--of--bear {
+    width: 37vw;
+    grid-column: 1/4;
+    margin-top: -473px;
+    margin-bottom: 200px;
+  }
+
+  .repairs--header {
+    grid-column: 4/7;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 4/7;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 4/7;
+  }
+
+  .cost {
+    grid-column: 4/7;
+    margin-top: 20px;
+  }
+
+  .left {
+    grid-column: 1/5;
+  }
+
+  .left--kinds {
+    grid-column: 1/4;
+  }
+
+  .left--description {
+    grid-column: 1/4;
+  }
+
+  .left--chage--top {
+    margin-top: 150px;
+  }
+
+  .left--cost {
+    grid-column: 1/4;
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
+
+  .helicopter {
+    grid-column: 4/7;
+    width: 45vw;
+    margin-bottom: -500px;
+    margin-top: 210px;
+  }
+
+  .robot {
+    width: 40vw;
+    grid-column: 1/4;
+    margin-top: -425px;
+  }
+
+  .dog {
+    width: 43vw;
+    grid-column: 4/7;
+    margin-top: -350px;
+  }
+
+  .old--bear {
+    width: 36vw;
+    grid-column: 1/4;
+    margin-top: -465px;
+  }
+
+  .story--before--after {
+    grid-column: 1/7;
+    margin-top: 350px;
+    margin-bottom: 400px;
+  }
+
+  .arrow--one {
+    grid-column: 1/2;
+    margin-top: 530px;
+    width: 26px;
+  }
+
+  .arrow--two {
+    width: 26px;
+    grid-column: 6/7;
+    margin-top: 530px;
+  }
+
+  .photo--before--after img:first-child {
+    width: 19vw;
+  }
+
+  .photo--before--after img:last-child {
+    width: 38vw;
+  }
+
+  .sparkle {
+    margin-top: 190px;
+    margin-left: 47vw;
+  }
+
+  .flower {
+    margin-top: 220px;
+    width: 700px;
+    margin-left: -27vw;
+  }
+
+  .second--background {
+    top: 3200px;
+    width: 189vw;
+  }
+
+  .footer-backgroud {
+    height: 1150px;
+    margin-top: -1050px;
+  }
+
+   .third--background {
+      top: 5050px;
+      width: 190vw;
+   }
+
+   .sparkle {
+    margin-top: 265px;
+    margin-left: 59vw;
+  }
+
+  .robot--second {
+    display: block;
+    grid-column: 1/6;
+    width: 40vw;
+  }
+
+  .robot {
+    display: none;
+  }
+
+  .electro {
+    display: none;
+  }
+
+  .electro--two {
+    display: block;
+    margin-top: -380px;
+  }
+
+  .first--background {
+    top: 1159px;
+    width: 206vw;
+  }
+
+  .robot--kinds {
+    margin-top: -219px;
+  }
+
+  .robot--description {
+    margin-top: -124px;
+  }
+
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .arrows img {
+    width: 50px;
+  }
+
+  .arrows img:first-of-type {
+    transform: scale(-1, 1);
+  }
+
+  .arrow--one {
+    display: none;
+  }
+
+  .arrow--two {
+    display: none;
+  }
+
+  .photo--before--after {
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .photo--before--after img:first-child {
+    width: 33vw;
+  }
+
+  .photo--before--after img:last-child {
+    width: 64vw;
+  }
+
+  .add--text {
+    margin-top: 2em;
+  }
+
+  .contact--background {
+    width: 218vw;
+  }
+
+  .schedule {
+    margin-top: 50px;
+  }
+
+  .about--master--class--add-text--two {
+    margin-top: 190px;
+  }
+
 }
 
 @media (max-width: 700px) {
   .menu--section--menu {
     display: block;
-    width: 40px;
+    width: 42px;
+    height: 41px;
   }
 
-  .menu--section p {
+  header {
+    align-items: center;
+  }
+
+  .menu--section {
     display: none;
+  }
+
+
+
+  .third--background {
+    top: 5250px;
+  }
+
+  .about--exibition h2 {
+    margin-top: -800px;
+  }
+
+  .rocks--main {
+    margin-top: 292px;
+  }
+
+  .contact--background {
+    width: 242vw;
+    margin-left: -302px;
+  }
+
+  .menuOnMobilediv {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EDCA00;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #cancel {
+    width: 24px;
+    margin-top: 34px;
+    margin-right: 35px;
+  }
+
+  .cancel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .menuOnMobileSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 18vh;
+  }
+
+  .menuOnMobileSection a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #FFF0DC;
+    border-bottom: 0px solid #000;
+  }
+
+  .menuOnMobileSection a:active {
+    color: #77C697;
+  }
+
+  #invented {
+    color: #004CA1;
+  }
+}
+
+@media (max-width: 660px) {
+  .schedule--part--one p,
+  .schedule--part--two p,
+  .schedule--part--two a  {
+    font-size: 14px;
+  }
+
+  #firstData,
+  #secondData,
+  #thirdData,
+  #fourthData {
+    font-size: 30px;
+  }
+
+  #firstDataSmall,
+  #secondDataSmall,
+  #thirdDataSmall,
+  #fourthDataSmall {
+    font-size: 18px;
+  }
+
+  .data {
+    grid-column: 1/6;
+  }
+
+  .schedule--time {
+    margin-right: 30px;
+  }
+
+  .schedule--age {
+    margin-right: 15px;
+  }
+
+  #wolf {
+    width: 400px;
+    margin-top: -300px;
+    margin-bottom: 300px;
   }
 }
 
@@ -1387,6 +2850,160 @@ body {
   #about--exibition--main--header {
     margin-top: -806px;
   }
+
+  .repairs--of--bear {
+    margin-bottom: 900px;
+    grid-column: 1/7;
+    width: 45vw;
+    margin-top: -850px;
+    margin-left: 20vw;
+  }
+  .repairs--header {
+    grid-column: 1/7;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 1/7;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 1/7;
+  }
+
+  .cost {
+    grid-column: 3/7;
+    margin-top: 20px;
+  }
+
+  .left {
+    grid-column: 1/7;
+  }
+
+  .left--kinds {
+    grid-column: 1/7;
+  }
+
+  .left--description {
+    grid-column: 1/7;
+  }
+
+  .story--before--after {
+    margin-top: 270px;
+  }
+
+  .left--chage--top {
+    margin-top: 150px;
+  }
+
+  .left--cost {
+    grid-column: 3/7;
+    margin-bottom: 200px;
+    margin-top: 20px;
+  }
+
+  .helicopter {
+    grid-column: 1/7;
+    width: 82vw;
+    margin-bottom: -500px;
+    margin-top: -320px;
+  }
+
+  .robot--second {
+    width: 62vw;
+    grid-column: 1/7;
+    margin-top: -57px;
+    margin-left: 10vw;
+    margin-bottom: 400px;
+  }
+
+  .dog {
+    width: 77vw;
+    grid-column: 1/7;
+    margin-top: -980px;
+    margin-bottom: 1000px;
+  }
+
+  .old--bear {
+    width: 46vw;
+    grid-column: 1/7;
+    margin-top: -915px;
+    margin-left: 15vw;
+  }
+
+  .robot--kinds {
+    margin-top: -283px;
+  }
+
+  .robot--description {
+    margin-top: -195px;
+  }
+
+  .robot--cost {
+    margin-top: -76px;
+  }
+
+  .left--chage--top {
+    margin-top: 470px;
+  }
+
+  .third--background {
+    top: 6450px;
+  }
+
+  .care--about {
+    grid-column: 1/7;
+    margin-top: -10px;
+  }
+
+  .footer-backgroud {
+    height: 1200px;
+    margin-top: -1120px;
+  }
+
+  header {
+    grid-column: 1/7;
+  }
+
+  .about--exibition {
+    grid-column: 1/7;
+  }
+
+  .sign,
+  .about--form,
+  .form--button,
+  input,
+  #map,
+  .first--building,
+  .second--building,
+  .collab,
+  .call--doctor,
+  .excursion {
+    grid-column: 1/7;
+  }
+
+  .follow {
+    grid-column: 1/5;
+  }
+
+  .first--building,
+  .call--doctor,
+  .collab {
+    margin-bottom: 30px;
+  }
+
+  .contact--background {
+    width: 278vw;
+    margin-left: -372px;
+  }
+
+  .care--about {
+    margin-bottom: 700px;
+  }
+
+  #cloud {
+    width: 115vw;
+    margin-left: 5vw;
+  }
 }
 
 @media (max-width: 514px) {
@@ -1395,7 +3012,43 @@ body {
   }
 
   .about--exibition {
-    margin-top: 460px;
+    margin-top: 300px;
+  }
+
+  .benefit {
+    margin-top: 60vw;
+  }
+
+  .contact--background {
+    width: 1605px;
+    margin-left: -422px;
+  }
+
+  .schedule--time,
+  .schedule--age {
+    margin-top: -30px;
+  }
+
+  .schedule--about {
+    margin-left: -95px;
+  }
+
+  hr {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .schedule--part--two img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .schedule--section {
+    align-items: center;
+  }
+
+  .about--exibition {
+    margin-top: 380px;
   }
 }
 
@@ -1627,7 +3280,7 @@ body {
     height: 1400px;
     grid-column: 1/3;
     margin-left: -8vw;
-    margin-top: -1350px;
+    margin-top: -1310px;
   }
 
   .add-info-icon img {
@@ -1670,6 +3323,262 @@ body {
     grid-column: 1/3;
   }
 
+  .care--header {
+    grid-column: 1/3;
+    font-size: 15rem;
+    line-height: 17.5rem;
+    text-align: left;
+    margin-top: 120px;
+  }
+
+  .care--about {
+    margin-bottom: 700px;
+    grid-column: 1/3;
+    text-align: left;
+  }
+  .repairs--header {
+    grid-column: 1/3;
+    margin-bottom: 0px;
+  }
+
+  .kinds--of--repairs {
+    grid-column: 1/3;
+  }
+
+  .description--repairs--of--bear {
+    grid-column: 1/3;
+    margin-top: -12px;
+  }
+
+  .cost {
+    grid-column: 1/3;
+    margin-top: 0px;
+  }
+
+  .left {
+    grid-column: 1/3;
+    margin-bottom: 0px;
+  }
+
+  .left--kinds {
+    grid-column: 1/3;
+  }
+
+  .left--description {
+    grid-column: 1/3;
+    margin-top: -12px;
+  }
+
+  .story--before--after {
+    margin-top: 270px;
+  }
+
+  .left--chage--top {
+    margin-top: 150px;
+  }
+
+  .left--cost {
+    grid-column: 1/3;
+    margin-bottom: 200px;
+    margin-top: 0px;
+  }
+
+  .helicopter {
+    grid-column: 1/3;
+    width: 82vw;
+    margin-bottom: -500px;
+    margin-top: -240px;
+  }
+
+  .robot--second {
+    width: 62vw;
+    grid-column: 1/3;
+    margin-top: -57px;
+    margin-left: 10vw;
+    margin-bottom: 400px;
+  }
+
+  .dog {
+    width: 77vw;
+    grid-column: 1/3;
+    margin-top: -895px;
+    margin-bottom: 900px;
+  }
+
+  .old--bear {
+    width: 46vw;
+    grid-column: 1/3;
+    margin-top: -745px;
+    margin-left: 18vw;
+  }
+
+  .robot--kinds {
+    margin-top: -283px;
+  }
+
+  .robot--description {
+    margin-top: -195px;
+  }
+
+  .robot--cost {
+    margin-top: -76px;
+  }
+
+  .left--chage--top {
+    margin-top: 310px;
+  }
+
+  .third--background {
+    top: 6450px;
+  }
+
+  .care--about {
+    grid-column: 1/3;
+    margin-top: -10px;
+  }
+
+  .story--before--after {
+    grid-column: 1/3;
+  }
+
+  .story--before--after--header {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .story--before--after--header p {
+    margin-top: -1px;
+    font-size: 3rem;
+  }
+
+  .robot {
+    grid-column: 1/3;
+  }
+
+  .repairs--of--bear {
+    grid-column: 1/3;
+    width: 52vw;
+    margin-top: -795px;
+    margin-bottom: 825px;
+  }
+
+  .flower {
+    margin-top: 150px;
+    width: 113vw;
+    margin-left: -33vw;
+  }
+
+  .sparkle {
+    margin-top: 179px;
+    margin-left: 51vw;
+    width: 80px;
+  }
+
+  .robot--kinds {
+    margin-top: -328px;
+  }
+
+  .robot--description {
+    margin-top: -249px;
+  }
+
+  .robot--cost {
+    margin-top: -144px;
+  }
+
+  .first--background {
+    top: 1260px;
+    width: 386vw;
+  }
+
+  .third--background {
+    top: 5599px;
+  }
+
+  .second--background {
+    top: 3200px;
+    width: 292vw;
+  }
+
+  .call {
+    margin-top: 10rem;
+  }
+
+  .call a:first-child {
+    margin-bottom: 0px;
+  }
+
+  .sign,
+  .about--form,
+  input,
+  #map,
+  .form--button,
+  .adress--info--adress,
+  .first--building,
+  .second--building,
+  .collab,
+  .call--doctor,
+  .excursion {
+    grid-column: 1/3;
+  }
+
+  .follow {
+    grid-column: 1/3;
+  }
+
+  .sign {
+    margin-top: 120px;
+  }
+
+  .sign h3 {
+    font-size: 48px;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  .form--button p {
+    width: 133px;
+  }
+
+  .about--form {
+    margin-top: 40px;
+  }
+
+  .form--button {
+    justify-content: center;
+  }
+
+  .follow img {
+    width: 50px;
+  }
+
+  #map {
+    margin-top: 40px;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  .contact--background {
+    width: 1405px;
+    margin-left: -422px;
+  }
+
+  .schedule,
+  .data,
+  #cloud,
+  #wolf,
+  .starlite {
+    grid-column: 1/3;
+  }
+
+  #wolf {
+    margin-top: -400px;
+  }
+
 }
 
 @media (max-width: 432px) {
@@ -1692,6 +3601,14 @@ body {
   #about--exibition--main--header {
     margin-top: -630px;
   }
+
+  .third--background {
+    top: 5570px;
+ }
+
+ .sign {
+    margin-top: 22vw;
+  }
 }
 
 @media (max-width: 397px) {
@@ -1710,7 +3627,7 @@ body {
   .car {
     margin-top: -18vw;
     width: 57vw;
-    margin-left: 40vw;
+    margin-left: 51vw;
   }
 
   .about--exibition h2 {
@@ -1724,6 +3641,57 @@ body {
 
   .rocks {
     margin-top: 64vw;
+  }
+
+  .repairs--of--bear {
+    margin-top: -765px;
+    margin-bottom: 780px;
+  }
+
+  .helicopter {
+    margin-bottom: -500px;
+    margin-top: -200px;
+  }
+
+  .robot--second {
+    margin-bottom: 390px;
+  }
+
+  .dog {
+    margin-top: -870px;
+    margin-bottom: 815px;
+  }
+
+  .left--chage--top {
+    margin-top: 250px;
+  }
+
+  .old--bear {
+    margin-top: -765px;
+  }
+
+  .story--before--after {
+    margin-bottom: 350px;
+  }
+
+  .sparkle {
+    margin-left: 62vw;
+  }
+
+  .robot--cost {
+    margin-top: -116px;
+  }
+
+  .schedule--about {
+    margin-right: 40px;
+    line-height: 20px;
+  }
+
+  #firstDataSmall,
+  #secondDataSmall,
+  #thirdDataSmall,
+  #fourthDataSmall {
+    font-size: 14px;
   }
 }
 
@@ -1776,7 +3744,114 @@ body {
 
   #about--exibition--main--header {
     margin-top: -683px;
-}
+  }
+
+  .care--about {
+    margin-bottom: 500px;
+    grid-column: 1/3;
+    text-align: left;
+  }
+
+  .flower {
+    margin-top: 130px;
+    width: 145vw;
+    margin-left: -62vw;
+  }
+
+  .care--header {
+    margin-top: 80px;
+    font-size: 12rem;
+    line-height: 15rem;
+  }
+
+  .sparkle {
+    margin-top: 135px;
+    margin-left: 52vw;
+  }
+
+  .arrows img {
+    width: 40px;
+  }
+
+  .repairs--of--bear {
+    margin-top: -740px;
+    margin-bottom: 750px;
+  }
+
+  .helicopter {
+    margin-bottom: -500px;
+    margin-top: -168px;
+  }
+
+  .robot--cost {
+    margin-top: -95px;
+  }
+
+  .robot--second {
+    margin-bottom: 380px;
+  }
+
+  .dog {
+    margin-top: -907px;
+    margin-bottom: 835px;
+  }
+
+  .footer-backgroud {
+    height: 1300px;
+    margin-top: -1240px;
+  }
+
+  .story--before--after {
+    margin-bottom: 250px;
+  }
+
+  .third--background {
+    top: 5387px;
+  }
+
+  .follow img {
+    width: 40px;
+  }
+
+  .sign h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .number {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+
+  input {
+    margin-top: 0px;
+  }
+
+  .about--form {
+    margin-top: 10px;
+  }
+
+  .form--button {
+    margin-top: 20px;
+  }
+
+  .sign {
+    margin-top: 12vw;
+  }
+
+  .form--button {
+    margin-bottom: 150px;
+  }
+
+  .contact--background {
+    width: 1255px;
+    margin-left: -421px;
+    margin-top: -11px;
+  }
+
+  .menuOnMobileSection {
+    margin-top: 9vh;
+  }
 
 }
 
@@ -1799,5 +3874,19 @@ body {
 
   .ambulance h2 {
     margin-top: -169vw;
+  }
+}
+
+@media (max-width: 325px) {
+  .robot--kinds {
+    margin-top: -270px;
+  }
+
+  .robot--description {
+    margin-top: -195px;
+  }
+
+  .robot--cost {
+    margin-top: -41px;
   }
 }

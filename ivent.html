@@ -7,31 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class="grid">
-      <div class="menuOnMobile">
+
+    <div id="menuOnMobile" class="menuOnMobile">
+      <div class="menuOnMobilediv">
         <div class="cancel">
-          <img src="" alt="">
+          <img id='cancel'src="./img/cancel.png" alt="">
         </div>
         <div class="menuOnMobileSection">
-          <a href="#">О нас</a>
-          <a href="#">Ремонт</a>
-          <a href="#">Мероприятия</a>
-          <a href="#">Контакты</a>
+          <a href="index.html">О нас</a>
+          <a href="repairs.html">Ремонт</a>
+          <a id="invented" href="ivent.html">Мероприятия</a>
+          <a href="contact.html">Контакты</a>
         </div>
       </div>
+    </div>
 
-     <header>
-       <img src="./img/logo.png" alt="">
-       <div class="menu--section">
-         <p>О нас</p>
-         <p>Ремонт</p>
-         <p class="invented">Мероприятия</p>
-         <p>Контакты</p>
-       </div>
-       <img class="menu--section--menu" src="./img/menu.png" alt="">
-       <div class="menu--moblile">
-       </div>
-     </header>
+    <div class="grid">
+
+
+      <header>
+        <img src="./img/logo.png" alt="">
+        <div class="menu--section">
+          <a href="index.html">О нас</a>
+          <a href="repairs.html">Ремонт</a>
+          <a id="invented--section" href="ivent.html">Мероприятия</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <img class="menu--section--menu" src="./img/menu.png" alt="">
+        <div class="menu--moblile">
+        </div>
+      </header>
 
      <section class="about--exibition about--exibition--main">
        <img class="stars stars--main" src="./img/stars.png" alt="">
@@ -65,48 +70,401 @@
      на&nbsp;стойке регистрации.</p>
 
      <div class="data">
-       <p class="selected--data--first">25/06 CБ</p>
-       <p id = "secondData">26/06</p>
-       <p>03/07</p>
-       <p>04/07</p>
+       <p id="firstData">25/06 CБ</p>
+       <p id="firstDataSmall">25/06 CБ</p>
+       <p id ="secondDataSmall">26/06</p>
+       <p id ="secondData">26/06</p>
+       <p id="thirdData">03/07</p>
+       <p id="thirdDataSmall">03/07</p>
+       <p id="fourthData">04/07</p>
+       <p id="fourthDataSmall">04/07</p>
      </div>
 
 
-     <p id="first" class="time">12:00</p>
-     <p id="first" class="age">3+</p>
-     <p id="first" class="age--name--of--master--class first">3+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Рисуем авкарелью подсолнухи</p>
-     <div id="first" class="place--sign">
-       <p clas="place">5 мест</p>
-       <a>Записаться</a>
+
+     <div id="scheduleFirst" class="schedule">
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">12:00</p>
+           <p class="schedule--age">3+</p>
+           <p class="schedule--about">Рисуем акварелью подсолнухи</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>5&nbsp;мест</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">13:30</p>
+           <p class="schedule--age">5+</p>
+           <p class="schedule--about">Лепим диких животных из глины</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>3&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">15:00</p>
+           <p class="schedule--age">3+</p>
+           <p class="schedule--about">Ставим сценку по книге Оскара Уайлда</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>2&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">16:00</p>
+           <p class="schedule--age">3+</p>
+           <p class="schedule--about">Делаем из оригами целый зоопарк</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>2&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">17:00</p>
+           <p class="schedule--age">2+</p>
+           <p class="schedule--about">Рисуем книгу, которую сами придумаем</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>1&nbsp;место</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">19:00</p>
+           <p class="schedule--age">5+</p>
+           <p class="schedule--about">Делаем фенечки и браслеты на лето</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>3&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
      </div>
-     <img class="plus" src="" alt="">
-     <div id="first" class="bottom--line"></div>
 
-
-
-
-
-
-
-
-     <p id="second" class="time">13:30</p>
-     <p id="second" class="age">2+</p>
-     <p id="second" class="age--name--of--master--class">3+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Лепим игрушки из пластилина</p>
-     <div id="second" class="place--sign">
-       <p clas="place">2 места</p>
-       <a>Записаться</a>
+     <div class="starlite">
+       <img src="./img/starlite.png" alt="">
+       <img src="./img/starlite.png" alt="">
+       <img src="./img/starlite.png" alt="">
      </div>
-     <img class="plus" src="" alt="">
-     <div id="second" class="bottom--line"></div>
+
+
+
+
+
+
+
+     <div id="scheduleSecond" class="schedule">
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">12:00</p>
+           <p class="schedule--age">4+</p>
+           <p class="schedule--about">Собираем домики из бумаги</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>2&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">13:30</p>
+           <p class="schedule--age">3+</p>
+           <p class="schedule--about">Рисуем гуашью натюрморт</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>4&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">15:00</p>
+           <p class="schedule--age">3+</p>
+           <p class="schedule--about">Лепим из пластилина королевство</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>2&nbsp;места</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+       <div class="schedule--section">
+         <div class="schedule--part--one">
+           <p class="schedule--time">17:00</p>
+           <p class="schedule--age">5+</p>
+           <p class="schedule--about">Разучиваем песню на муз. инструментах</p>
+         </div>
+         <div class="schedule--part--two">
+           <p>1&nbsp;место</p>
+           <a href="#">Записаться</a>
+           <img src="./img/plus.png" alt="">
+         </div>
+       </div>
+       <hr>
+
+     </div>
+
+     <img id="cloud" src="./img/cloud.png" alt="">
+
+
+
+
+      <div id="scheduleThird" class="schedule">
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">12:00</p>
+            <p class="schedule--age">2+</p>
+            <p class="schedule--about">Собираем город из конструктора</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>3&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">13:00</p>
+            <p class="schedule--age">3+</p>
+            <p class="schedule--about">Шьем мягкие игрушки</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>3&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">14:00</p>
+            <p class="schedule--age">4+</p>
+            <p class="schedule--about">Ставим сценку по книге братьев Гримм</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>2&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">17:00</p>
+            <p class="schedule--age">4+</p>
+            <p class="schedule--about">Делаем из оригами животных</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>1&nbsp;место</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">18:00</p>
+            <p class="schedule--age">5+</p>
+            <p class="schedule--about">Раскрашиваем мандалу под гитару</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>2&nbsp;местa</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+      </div>
+
+      <img id="wolf" src="./img/wolf.png" alt="">
+
+
+
+
+
+      <div id="scheduleFourth" class="schedule">
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">12:00</p>
+            <p class="schedule--age">3+</p>
+            <p class="schedule--about">Рисуем гуашью натуру</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>4&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">13:00</p>
+            <p class="schedule--age">3+</p>
+            <p class="schedule--about">Собираем робота-помощника</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>2&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">14:00</p>
+            <p class="schedule--age">5+</p>
+            <p class="schedule--about">Делаем из оригами замок</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>2&nbsp;места</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+        <div class="schedule--section">
+          <div class="schedule--part--one">
+            <p class="schedule--time">17:00</p>
+            <p class="schedule--age">2+</p>
+            <p class="schedule--about">Ставим сценку по книге Братьев Гримм</p>
+          </div>
+          <div class="schedule--part--two">
+            <p>3&nbsp;местa</p>
+            <a href="#">Записаться</a>
+            <img src="./img/plus.png" alt="">
+          </div>
+        </div>
+        <hr>
+
+      </div>
+
+
+      <div class="header">
+         <h5>Госпиталь игрушек<br> «Плюшевое сердце»</h5>
+         <div class="header-menu">
+           <a href="#">О нас</a>
+           <a href="#">Ремонт</a>
+           <a href="#">Мероприятия</a>
+           <a href="#">Контакты</a>
+         </div>
+       </div>
+
+       <div class="treatment">
+          <h6>Лечим игрушки</h6>
+          <a href="#">Мягкая игрушка</a>
+          <a href="#">Пластмассовая игрушка</a>
+          <a href="#">Деревянная игрушка</a>
+          <a href="#">Игрушка с электроникой</a>
+          <a href="#">Реставрация</a>
+       </div>
+
+       <div class="adress">
+          <h6>Адрес</h6>
+          <p>Ул. Третьяковская 23, г.Москва,&nbsp;117034</p>
+          <p>5 минут от м. Третьяковская</p>
+       </div>
+
+       <div class="timetable">
+         <h6>Режим работы</h6>
+         <div class="timetable-gospital">
+           <p class="timetable-header h">Госпиталь</p>
+           <div class="time">
+             <p class="timetable-header">Пн-Пт:</p>
+             <p>11:00-18:00</p>
+           </div>
+           <div class="time">
+             <p class="timetable-header">Сб-Вс:</p>
+             <p>12:00-21:00</p>
+           </div>
+         </div>
+
+         <div class="timetable-audience">
+           <p class="timetable-header h">Выставочный зал</p>
+           <div class="time">
+             <p class="timetable-header">Пн-Пт:</p>
+             <p>11:00-20:00</p>
+           </div>
+           <div class="time">
+             <p class="timetable-header">Сб-Вс:</p>
+             <p>12:00-21:00</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="answers-to-any-questions">
+         <h6>По любым вопросам</h6>
+         <p>+ 7 (495) 334-20-19</p>
+         <p>+ 7 (495) 284-40-02</p>
+       </div>
+
+       <div class="add-info">
+          <div class="add-info-icon">
+            <img src="./img/twitter.png" alt="">
+            <img src="./img/vk.png" alt="">
+            <img src="./img/inst.png" alt="">
+            <img src="./img/facebook.png" alt="">
+          </div>
+
+          <div class="add-info-info">
+            <p>Шестакова Наталья</p>
+            <p>2020</p>
+          </div>
+       </div>
+       <div class="footer-backgroud"></div>
+
+     </div>
+
+
+
 
 
    </div>
 
 
-    <script src="./js/main.js">
-
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

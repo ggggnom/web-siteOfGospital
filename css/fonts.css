@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Dulya.otf';
   font-weight: normal;
-  src: url("../fonts/Dulya.otf") format("truetype");
+  src: url("../fonts/Dulya.otf") format("opentype");
 }
 
 @font-face {
