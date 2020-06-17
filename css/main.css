@@ -63,11 +63,6 @@ body {
     text-decoration: none;
   }
 
-  .menu--section a:hover {
-    color: #77C697;
-    text-decoration: underline;
-  }
-
   h1,
   h2,
   h3,
@@ -212,13 +207,33 @@ body {
   }
 
   a:hover {
+    text-decoration: none;
     color: #00A03E;
     border-bottom: 1px solid #00A03E;
   }
 
   a:active {
+    text-decoration: none;
     color: #043F1B;
     border-bottom: 1px solid #043F1B;
+  }
+
+  .menu--section a:hover {
+    color: #77C697;
+    text-decoration: underline;
+    border-bottom: 0px solid #000000;
+  }
+
+  header a {
+    border-bottom: 0px solid #000000;
+  }
+
+  header a:hover {
+    border-bottom: 0px solid #000000;
+  }
+
+  header a:active {
+    border-bottom: 0px solid #000000;
   }
 
   .schedule--part--two a:hover {
@@ -1142,6 +1157,10 @@ body {
     display: none;
   }
 
+  #scheduleFourth {
+    margin-bottom: 350px;
+  }
+
 }
 
 @media (max-width: 1760px) {
@@ -1583,17 +1602,17 @@ body {
   }
 
   .care--header {
-    grid-column: 2/7;
+    grid-column: 2/8;
     font-size: 80px;
     line-height: 106px;
   }
 
   .care--about {
-    grid-column: 2/7;
+    grid-column: 3/7;
   }
 
   .sparkle {
-    margin-top: 15vw;
+    margin-top: 190px;
     margin-left: 59vw;
   }
 
@@ -1698,7 +1717,7 @@ body {
   }
 
   .sparkle {
-    margin-top: 14vw;
+    margin-top: 190px;
     margin-left: 47vw;
   }
 
@@ -2049,7 +2068,7 @@ body {
   }
 
   .care--about {
-    grid-column: 3/11;
+    grid-column: 2/8;
     text-align: center;
     margin-bottom: 400px;
   }
@@ -2344,6 +2363,101 @@ body {
     width: 250px;
     margin-left: 267px;
   }
+
+  .care--header,
+  .care--about {
+    grid-column: 1/7;
+  }
+
+
+    .repairs--of--bear {
+      width: 37vw;
+      grid-column: 1/4;
+      margin-top: -473px;
+      margin-bottom: 200px;
+    }
+
+    .repairs--header {
+      grid-column: 4/7;
+    }
+
+    .kinds--of--repairs {
+      grid-column: 4/7;
+    }
+
+    .description--repairs--of--bear {
+      grid-column: 4/7;
+    }
+
+    .cost {
+      grid-column: 4/7;
+      margin-top: 20px;
+    }
+
+    .left {
+      grid-column: 1/5;
+    }
+
+    .left--kinds {
+      grid-column: 1/4;
+    }
+
+    .left--description {
+      grid-column: 1/4;
+    }
+
+    .left--chage--top {
+      margin-top: 150px;
+    }
+
+    .left--cost {
+      grid-column: 1/4;
+      margin-bottom: 200px;
+      margin-top: 20px;
+    }
+
+    .helicopter {
+      grid-column: 4/7;
+      width: 45vw;
+      margin-bottom: -500px;
+      margin-top: 210px;
+    }
+
+    .robot {
+      width: 40vw;
+      grid-column: 1/4;
+      margin-top: -425px;
+    }
+
+    .dog {
+      width: 43vw;
+      grid-column: 4/7;
+      margin-top: -350px;
+    }
+
+    .old--bear {
+      width: 36vw;
+      grid-column: 1/4;
+      margin-top: -465px;
+    }
+
+    .story--before--after {
+      grid-column: 2/6;
+      margin-top: 350px;
+      margin-bottom: 400px;
+    }
+
+    .arrow--one {
+      grid-column: 1/2;
+      margin-top: 530px;
+      width: 26px;
+    }
+
+    .arrow--two {
+      width: 26px;
+      grid-column: 6/7;
+      margin-top: 530px;
+    }
 
 }
 
