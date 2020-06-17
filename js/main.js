@@ -18,7 +18,25 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
-let secondDataSmall = document.getElementById('secondDataSmall')
+document.addEventListener("DOMContentLoaded", function(){
+  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+  console.log(scrollbar);
+  document.querySelector('[href="#openModal"]').addEventListener('click',function(){
+    document.body.style.overflow = 'hidden';
+    document.body.style.pointerEvents = 'none'
+    let modal = document.querySelector('.modal')
+    modal.style.opacity = 1
+    modal.style.pointerEvents = 'auto'
+  });
+  document.querySelector('[href="#close"]').addEventListener('click',function(){
+    document.body.style.overflow = 'visible';
+    let modalClose = document.querySelector('.modal')
+    modalClose.style.opacity = 0
+    document.body.style.pointerEvents = 'auto'
+  });
+});
+
+/*let secondDataSmall = document.getElementById('secondDataSmall')
 secondDataSmall.onclick = function () {
   let scheduleFirst = document.getElementById('scheduleFirst')
   scheduleFirst.style.display = 'none'
@@ -150,4 +168,4 @@ fourthDataSmallTape.onclick = function (){
   scheduleFirstTape.style.display = 'none'
   let starliteTape = document.querySelector('.starlite')
   starliteTape.style.display = 'none'
-}
+}*/
