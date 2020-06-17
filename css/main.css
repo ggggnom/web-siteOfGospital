@@ -16,7 +16,7 @@ body {
   overflow-y: hidden;
 }
 
-@media (max-width: 1920px) {
+ccc
   .grid {
     display: grid;
     grid-gap: 30px 60px;
@@ -119,6 +119,11 @@ body {
   .button:hover {
     color: #004CA1;
     border: 1px solid #004CA1;
+  }
+
+  .button:active {
+    color: #043F1B;
+    border: 1px solid #043F1B;
   }
 
   .arms {
@@ -861,7 +866,35 @@ body {
     height: 60px;
     border-bottom: 2px solid #000;
     margin-top: -5px;
+    font-family: "Montserrat";
+    color: #8A8A8A;
   }
+
+  input {
+    border: 1px solid #EDCA00;
+    font-size: 24px;
+    background-color: #EDCA00;
+    grid-column: 5/9;
+    height: 60px;
+    border-bottom: 2px solid #000;
+    margin-top: -5px;
+    font-family: "Montserrat";
+    color: #8A8A8A;
+  }
+
+  input:focus {
+    border: 1px solid #EDCA00;
+    font-size: 24px;
+    background-color: #EDCA00;
+    grid-column: 5/9;
+    height: 60px;
+    border-bottom: 2px solid #000;
+    margin-top: -5px;
+    font-family: "Montserrat";
+    color: #000;
+  }
+
+
 
   .contact--background {
     position: absolute;
@@ -2713,6 +2746,10 @@ body {
     margin-top: 190px;
   }
 
+  .data {
+    margin-top: 150px;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -3003,6 +3040,14 @@ body {
   #cloud {
     width: 115vw;
     margin-left: 5vw;
+  }
+
+  .data {
+    margin-top: 100px;
+  }
+
+  .starlite {
+    margin-bottom: 600px;
   }
 }
 
