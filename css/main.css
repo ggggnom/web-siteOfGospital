@@ -17,7 +17,6 @@ body {
 }
 
 @media (max-width: 2480px) {
-
   .grid {
     display: grid;
     grid-gap: 30px 60px;
@@ -123,8 +122,8 @@ body {
   }
 
   .button:active {
-    color: #78CF9A;
-    border: 1px solid #78CF9A;
+    color: #043F1B;
+    border: 1px solid #043F1B;
   }
 
   .arms {
@@ -1122,8 +1121,8 @@ body {
   .schedule--part--two img {
     display: none;
   }
-}
 
+}
 
 @media (max-width: 1760px) {
 
@@ -3047,9 +3046,6 @@ body {
     margin-top: 100px;
   }
 
-  .starlite {
-    margin-bottom: 600px;
-  }
 }
 
 @media (max-width: 514px) {
@@ -3897,6 +3893,10 @@ body {
 
   .menuOnMobileSection {
     margin-top: 9vh;
+  }
+
+  .starlite {
+    margin-bottom: 600px;
   }
 
 }
