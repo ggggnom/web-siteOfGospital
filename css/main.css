@@ -16,7 +16,6 @@ body {
   overflow-y: hidden;
 }
 
-ccc
   .grid {
     display: grid;
     grid-gap: 30px 60px;
@@ -122,8 +121,8 @@ ccc
   }
 
   .button:active {
-    color: #043F1B;
-    border: 1px solid #043F1B;
+    color: #78CF9A;
+    border: 1px solid #78CF9A;
   }
 
   .arms {
