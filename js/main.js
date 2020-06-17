@@ -151,10 +151,3 @@ fourthDataSmallTape.onclick = function (){
   let starliteTape = document.querySelector('.starlite')
   starliteTape.style.display = 'none'
 }
-
-let arrowTwo = document.getElementById('arrowTwo')
-arrowTwo.onclick = function () {
-  let photoBefore = document.querySelector('.photo--before--after')
-  photoBefore.style.display = 'none'
-
-}

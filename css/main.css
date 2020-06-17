@@ -117,8 +117,8 @@ body {
   }
 
   .button:hover {
-    color: #004CA1;
-    border: 1px solid #004CA1;
+    color: #00A03E;
+    border: 1px solid #00A03E;
   }
 
   .button:active {
@@ -207,8 +207,28 @@ body {
     font-size: 6rem;
     line-height: 9rem;
     font-family: 'Montserrat';
-    border-bottom: 1px #000000 solid;
+    border-bottom: 1px solid #000000;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: #00A03E;
+    border-bottom: 1px solid #00A03E;
+  }
+
+  a:active {
+    color: #043F1B;
+    border-bottom: 1px solid #043F1B;
+  }
+
+  .schedule--part--two a:hover {
+    color: #00A03E;
+    border-bottom: 1px solid #00A03E;
+  }
+
+  .schedule--part--two a:active {
+    color: #043F1B;
+    border-bottom: 1px solid #043F1B;
   }
 
   .before--after--story p {
