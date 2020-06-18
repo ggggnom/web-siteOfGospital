@@ -1983,11 +1983,11 @@ body {
   }
 
   .photo--before--after img:first-child {
-    width: 19vw;
+    width: 66vw;
   }
 
   .photo--before--after img:last-child {
-    width: 38vw;
+    width: 72vw;
   }
 
   .sparkle {
@@ -2303,6 +2303,11 @@ body {
 
   .about--exibition--main {
     margin-top: 300px;
+  }
+
+
+  .photo--before--after img:nth-child(2) {
+    width: 60vw;
   }
 }
 
@@ -3157,7 +3162,7 @@ body {
     width: 50px;
   }
 
-  .arrows img:first-of-type {
+  .arrows img:last-of-type {
     transform: scale(-1, 1);
   }
 
@@ -3179,7 +3184,7 @@ body {
   }
 
   .photo--before--after img:last-child {
-    width: 64vw;
+    width: 96vw;
   }
 
   .add--text {
@@ -3209,6 +3214,10 @@ body {
 
   .about--exibition--main {
     margin-top: 330px;
+  }
+
+  .photo--before--after {
+    height: 400px;
   }
 
 }
@@ -3245,6 +3254,12 @@ body {
   .contact--background {
     width: 242vw;
     margin-left: -302px;
+  }
+
+  .menuOnMobile {
+    z-index: +3;
+    position: fixed;
+    top: 0;
   }
 
   .menuOnMobilediv {
@@ -3602,6 +3617,14 @@ body {
   }
 
 
+  .photo--before--after {
+    height: 300px;
+    margin-bottom: 40px;
+  }
+
+  .arrows {
+    margin-bottom: 0px;
+  }
 
   header img:first-child {
       margin-left: 20px;
@@ -4237,6 +4260,11 @@ body {
   #thirdDataSmall,
   #fourthDataSmall {
     font-size: 14px;
+  }
+
+  .story--before--after--header {
+    flex-direction: column;
+    margin-bottom: 35px;
   }
 }
 

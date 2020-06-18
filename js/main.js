@@ -18,9 +18,8 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
-/*
 
-let appointment = document.querySelector('.appointment')
+/*let appointment = document.querySelector('.appointment')
 appointment.onclick = function () {
   let modal = document.querySelector('.modal')
   modal.style.opacity = 1
@@ -28,6 +27,8 @@ appointment.onclick = function () {
   document.body.style.overflow = 'hidden';
   document.body.style.pointerEvents = 'none'
 }
+
+
 
 let close = document.getElementById('close')
 close.onclick = function () {
@@ -37,6 +38,7 @@ close.onclick = function () {
   modalClose.style.display = 'none'
   document.body.style.pointerEvents = 'auto'
 }
+/*
 
 let callAmbulance = document.querySelector('.callAmbulance')
 callAmbulance.onclick = function () {
@@ -56,7 +58,7 @@ closeMe.onclick = function () {
   document.body.style.pointerEvents = 'auto'
 }
 
-
+/*
 let sendTelephone = document.querySelector('.sendTelephone')
 sendTelephone.onclick = function () {
   let cancelWindow = document.querySelector('.openWindow')
