@@ -44,7 +44,7 @@
          <h1>Вылечим <br> любимую игрушку</h1>
          <p>Порвался любимый мишка? Сломалась машинка? Наши лучшие врачи окажут
    быструю помощь и&nbsp;вылечат вашу игрушку за&nbsp;2&nbsp;дня</p>
-         <a class="button">Записаться на прием</a>
+         <a href="#openModal" class="button appointment">Записаться на прием</a>
        </section>
 
        <img class="arms" src="./img/arms.png" alt="">
@@ -83,7 +83,7 @@
           <p>У&nbsp;нас есть скорая помощь, которая приедет к&nbsp;вам
    в&nbsp;течение 30&nbsp;минут. Если поломка не&nbsp;сложная, игрушку
    вылечат при вас или&nbsp;же отвезут в&nbsp;госпиталь.</p>
-          <a class="button">Вызвать скорую</a>
+          <a  href="#openWindow" class="button callAmbulance">Вызвать скорую</a>
        </section>
        <img class="car" src="./img/car.png" alt="">
 
@@ -124,8 +124,8 @@
          <p class="add--text">Наши опытные врачи всегда готовы спасти<br>
    вашу любимую игрушку</p>
          <div class="call">
-           <a href="#openModal" class="button">Записаться на прием</a>
-           <a class="button">Вызвать скорую</a>
+           <a href="#openModal" class="button appointment">Записаться на прием</a>
+           <a href="#openWindow" class="button callAmbulance">Вызвать скорую</a>
          </div>
        </section>
 
@@ -152,12 +152,59 @@
                <p>Или оставьте Ваш телефон, а&nbsp;мы&nbsp;перезвоним втечение двух минут</p>
                <input type="text" name="" value="89859760529">
                <div class="modal_body_button">
-                 <a class="button">Вызвать скорую</a>
+                 <a class="button sendTelephone">Отправить телефон</a>
                </div>
              </div>
            </div>
          </div>
        </div>
+
+
+       <div id="openWindow" class="openWindow">
+          <div class="modal_dialog">
+            <div class="modal_content">
+              <div class="modal_header">
+                <div class="modal--close">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                    <symbol id="closed" viewBox="0 0 24 24">
+                     <path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                     </symbol>
+                  </svg>
+                  <svg  href="#close" title="Close" id="closeMe" class="close">
+                    <use xlink:href="#closed" />
+                  </svg>
+                </div>
+
+                <h4 class="modal_title">Вызвать скорую помощь</h4>
+              </div>
+              <div class="modal_body">
+                <p>Позвоните нам:</p>
+                <p class="modal--number">+7 (499) 936-23-34</p>
+                <p>Или оставьте Ваш телефон, а&nbsp;мы&nbsp;перезвоним втечение двух минут</p>
+                <input type="text" name="" value="89859760529">
+                <div class="modal_body_button">
+                  <a class="button sendTelephone">Отправить телефон</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="openAboutSending" class="openAboutSending">
+          <div class="modal_dialog">
+            <div class="modal_content">
+              <div class="modal_header">
+                 <h4 class="modal_title">Телефон отправлен</h4>
+              </div>
+              <div class="modal_body">
+                <div class="modal_body_button">
+                  <a class="button closeAboutSending">ОК</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
        <div class="header">

@@ -18,24 +18,73 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-  var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-  console.log(scrollbar);
-  document.querySelector('[href="#openModal"]').addEventListener('click',function(){
-    document.body.style.overflow = 'hidden';
-    document.body.style.pointerEvents = 'none'
-    let modal = document.querySelector('.modal')
-    modal.style.opacity = 1
-    modal.style.pointerEvents = 'auto'
-  });
-  document.querySelector('[href="#close"]').addEventListener('click',function(){
-    document.body.style.overflow = 'visible';
-    let modalClose = document.querySelector('.modal')
-    modalClose.style.opacity = 0
-    document.body.style.pointerEvents = 'auto'
-  });
-});
+let appointment = document.querySelector('.appointment')
+appointment.onclick = function () {
+  let modal = document.querySelector('.modal')
+  modal.style.opacity = 1
+  modal.style.pointerEvents = 'auto'
+  document.body.style.overflow = 'hidden';
+  document.body.style.pointerEvents = 'none'
+}
 
+let close = document.getElementById('close')
+close.onclick = function () {
+  document.body.style.overflow = 'visible';
+  let modalClose = document.querySelector('.modal')
+  modalClose.style.opacity = 0
+  modalClose.style.display = 'none'
+  document.body.style.pointerEvents = 'auto'
+}
+
+let callAmbulance = document.querySelector('.callAmbulance')
+callAmbulance.onclick = function () {
+  let window = document.querySelector('.openWindow')
+  openWindow.style.opacity = 1
+  openWindow.style.pointerEvents = 'auto'
+  document.body.style.overflow = 'hidden';
+  document.body.style.pointerEvents = 'none'
+}
+
+let closeMe = document.getElementById('closeMe')
+closeMe.onclick = function () {
+  document.body.style.overflow = 'visible';
+  let closeWindow = document.querySelector('.openWindow')
+  closeWindow.style.opacity = 0
+  closeWindow.style.display = 'none'
+  document.body.style.pointerEvents = 'auto'
+}
+
+
+let sendTelephone = document.querySelector('.sendTelephone')
+sendTelephone.onclick = function () {
+  let cancelWindow = document.querySelector('.openWindow')
+  cancelWindow.style.opacity = 0
+  cancelWindow.style.display = 'none'
+  let modalCancel = document.querySelector('.modal')
+  modalCancel.style.opacity = 0
+  modalCancel.style.display = 'none'
+  let openAboutSending = document.getElementById('openAboutSending')
+  openAboutSending.style.opacity = 1
+  openAboutSending.style.pointerEvents = 'auto'
+}
+
+let closeAboutSending = document.querySelector('.closeAboutSending')
+closeAboutSending.onclick = function () {
+  let cancelAboutSending = document.getElementById('openAboutSending')
+  cancelAboutSending .style.opacity = 0
+  cancelAboutSending .style.display = 'none'
+  document.body.style.pointerEvents = 'auto'
+  document.body.style.overflow = 'visible';
+}
+
+let sendTelephoneWithout = document.querySelector('.sendTelephoneWithout')
+sendTelephoneWithout.onclick = function () {
+  let openAboutSendingMe = document.getElementById('openAboutSending')
+  openAboutSendingMe.style.opacity = 1
+  openAboutSendingMe.style.pointerEvents = 'auto'
+  document.body.style.overflow = 'hidden';
+  document.body.style.pointerEvents = 'none'
+}
 /*let secondDataSmall = document.getElementById('secondDataSmall')
 secondDataSmall.onclick = function () {
   let scheduleFirst = document.getElementById('scheduleFirst')
