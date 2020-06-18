@@ -1443,9 +1443,6 @@ body {
     margin-bottom: 60px;
   }
 
-  .story--before--after--header .opacitys {
-    opacity: 0;
-  }
 }
 
 @media (max-width: 1760px) {

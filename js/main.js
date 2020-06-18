@@ -18,7 +18,7 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
-
+/*
 
 let appointment = document.querySelector('.appointment')
 appointment.onclick = function () {
@@ -56,8 +56,6 @@ closeMe.onclick = function () {
   document.body.style.pointerEvents = 'auto'
 }
 
-
-/*
 
 let sendTelephone = document.querySelector('.sendTelephone')
 sendTelephone.onclick = function () {
@@ -253,33 +251,9 @@ function slider() {
   }
 }
 
-let dd = document.querySelector('.arrow--two')
-dd.onclick = slider
+let dod = document.querySelector('.arrow--two')
+dod.onclick = slider
+
 
 let ddd = document.querySelector('.arrow--one')
 ddd.onclick = slider
-
-
-
-
-/*let text = document.querySelectorAll('.story--before--after--header div')
-let currents = 0;
-
-function sliders() {
-  for (let m = 0; m < text.length; m++) {
-    text[m].classList.add('opacitys')
-  }
-  text[currents].classList.remove('opacitys')
-
-  if (currents + 1 == text.length) {
-    currents = 0
-  } else {
-    currents++
-  }
-}
-
-let arrow = document.querySelector('.arrow--two')
-arrow.onclick = sliders
-
-let arrows = document.querySelector('.arrow--one')
-arrows.onclick = sliders*/
