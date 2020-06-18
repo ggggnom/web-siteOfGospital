@@ -1327,6 +1327,68 @@ body {
     fill: #004CA1;
   }
 
+  .repairs--of--bear:hover,
+  .old--bear:hover {
+    animation: move 2s ease;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(0deg)
+    }
+    20% {
+      transform: rotate(160deg)
+    }
+    60% {
+      transform: rotate(240deg)
+    }
+    80% {
+      transform: rotate(360deg)
+    }
+    100% {
+      transform: rotate(0deg)
+    }
+ }
+
+ .helicopter:hover,
+ .dog:hover {
+   animation: shake 2s ease;
+ }
+
+ @keyframes shake {
+   0% {
+     transform: rotate(0deg)
+   }
+   25% {
+     transform: rotate(-20deg)
+   }
+  75% {
+     transform: rotate(20deg)
+   }
+   100% {
+     transform: rotate(0deg)
+   }
+  }
+
+  .robot:hover,
+  .robot--second:hover {
+    animation: jump 0.7s ease infinite;
+  }
+
+  @keyframes jump{
+    0% {
+      transform: rotate(0deg)
+    }
+    25% {
+      transform: rotate(-10deg)
+    }
+   75% {
+      transform: rotate(10deg)
+    }
+    100% {
+      transform: rotate(0deg)
+    }
+   }
 }
 
 @media (max-width: 1760px) {

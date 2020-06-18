@@ -18,6 +18,8 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
+/*
+
 let appointment = document.querySelector('.appointment')
 appointment.onclick = function () {
   let modal = document.querySelector('.modal')
