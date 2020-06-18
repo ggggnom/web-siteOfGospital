@@ -18,7 +18,7 @@ cancel.onclick = function () {
   menuOnMobile.style.display = 'none'
 }
 
-/*
+
 
 let appointment = document.querySelector('.appointment')
 appointment.onclick = function () {
@@ -56,6 +56,8 @@ closeMe.onclick = function () {
   document.body.style.pointerEvents = 'auto'
 }
 
+
+/*
 
 let sendTelephone = document.querySelector('.sendTelephone')
 sendTelephone.onclick = function () {
@@ -220,3 +222,64 @@ fourthDataSmallTape.onclick = function (){
   let starliteTape = document.querySelector('.starlite')
   starliteTape.style.display = 'none'
 }*/
+
+var header = $('.lolo'),
+		scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
+});
+
+let images = document.querySelectorAll('.photo--before--after img')
+let current = 0;
+
+function slider() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.add('opacitym')
+  }
+  images[current].classList.remove('opacitym')
+
+  if (current + 1 == images.length) {
+    current = 0
+  } else {
+    current++
+  }
+}
+
+let dd = document.querySelector('.arrow--two')
+dd.onclick = slider
+
+let ddd = document.querySelector('.arrow--one')
+ddd.onclick = slider
+
+
+
+
+/*let text = document.querySelectorAll('.story--before--after--header div')
+let currents = 0;
+
+function sliders() {
+  for (let m = 0; m < text.length; m++) {
+    text[m].classList.add('opacitys')
+  }
+  text[currents].classList.remove('opacitys')
+
+  if (currents + 1 == text.length) {
+    currents = 0
+  } else {
+    currents++
+  }
+}
+
+let arrow = document.querySelector('.arrow--two')
+arrow.onclick = sliders
+
+let arrows = document.querySelector('.arrow--one')
+arrows.onclick = sliders*/
